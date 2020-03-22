@@ -8,6 +8,8 @@ exports.components = {
   "component---src-templates-blog-post-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/templates/blog-post.js"))),
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/pages/404.js"))),
+  "component---src-pages-about-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/pages/about.js"))),
+  "component---src-pages-articles-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/pages/articles.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/pages/index.js")))
 }
 

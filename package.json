@@ -38,7 +38,6 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-<<<<<<< HEAD
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
     "gatsby"
@@ -57,13 +56,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-=======
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
->>>>>>> 13d034eb6bcc2554761e88dcdb351a4237ce59d4
   }
 }
