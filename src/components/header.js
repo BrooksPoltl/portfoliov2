@@ -5,12 +5,12 @@ const Header = () => {
         <nav class = "nav">
             <div>
                 <div style = { { display: "flex"} }>
-                    <img src = {usb} style  = { {height: "24px", width: "24px", marginRight: "20px"} }/>
+                    <img src = {usb} alt = "usb" style  = { {height: "24px", width: "24px", marginRight: "20px"} }/>
                     <p>Brooks Poltl</p>
                 </div>
-                <p>About me</p>
-                <p>Articles</p>
-                <p>Contact</p>
+                <a>About me</a>
+                <a>Articles</a>
+                <a>Contact</a>
             </div>
         </nav>
     )
