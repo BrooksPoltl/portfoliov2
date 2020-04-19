@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "./header"
 import { rhythm } from "../utils/typography"
-import config from '../../data/SiteConfig'
+import config from '../data/SiteConfig'
 
 const Layout = ({ children }) => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from '../components/layout';
 import SEO from "../components/seo";
-import topicConfig from "../../data/topicConfig";
+import topicConfig from "../data/topicConfig";
 import { Link } from "gatsby";
 
 export default ({ data }) => {
