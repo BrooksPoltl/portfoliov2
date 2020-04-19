@@ -3,17 +3,15 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import Header from "../components/header"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ data}) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location}>
+    <Layout>
       <SEO title="All posts" />
-      <Header /> 
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
@@ -25,7 +23,7 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link to={`articles/${node.frontmatter.topic}${node.fields.slug}`}>
                   {title}
                 </Link>
               </h3>
@@ -60,6 +58,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            topic
           }
         }
       }

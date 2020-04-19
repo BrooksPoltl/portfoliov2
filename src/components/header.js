@@ -1,19 +1,42 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
 import usb from "../../content/assets/usb.svg"
-const Header = () => {
-    return (
-        <nav class = "nav">
-            <div>
-                <div style = { { display: "flex"} }>
-                    <img src = {usb} alt = "usb" style  = { {height: "24px", width: "24px", marginRight: "20px"} }/>
-                    <p>Brooks Poltl</p>
-                </div>
-                <a>About me</a>
-                <a>Articles</a>
-                <a>Contact</a>
+const Header = (props) => {
+    const [ scrolled, setScrolled ] = useState(false);
+    useEffect(() => {
+      window.addEventListener('scroll', navOnScroll)
+      return () => {
+        window.removeEventListener('scroll', navOnScroll)
+      }
+    }, [])
+
+    const navOnScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+      return (
+        <nav className={scrolled ? 'nav scroll' : 'nav'}>
+          <div className="nav-container">
+            <div className="brand">
+              <Link to="/">
+                <img src={usb} className="favicon" alt="usb" />
+                <span className="text">Brooks Poltl</span>
+              </Link>
             </div>
+            <div className="links">
+              {
+              props.menuLinks.map(link => (
+                <Link key={link.name} to={link.link} activeClassName="active">
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
         </nav>
-    )
+      )
 }
 
 export default Header

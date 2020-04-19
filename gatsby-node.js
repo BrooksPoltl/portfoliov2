@@ -5,6 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const topicPage = path.resolve(`./src/components/topic.js`)
   const result = await graphql(
     `
       {
@@ -19,6 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                topic
               }
             }
           }
@@ -30,16 +32,16 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.errors) {
     throw result.errors
   }
-
+  const topicBuilder = {};
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
-
+    const topic = post.node.frontmatter.topic;
     createPage({
-      path: post.node.fields.slug,
+      path: `articles/${topic}${post.node.fields.slug}`,
       component: blogPost,
       context: {
         slug: post.node.fields.slug,
@@ -47,6 +49,16 @@ exports.createPages = async ({ graphql, actions }) => {
         next,
       },
     })
+    if (!topicBuilder[topic]) {
+      createPage({
+        path: `articles/${topic}`,
+        component: topicPage,
+        context: {
+          topic,
+        },
+      })
+      topicBuilder[topic] = true;
+    }
   })
 }
 
