@@ -23,7 +23,7 @@ const BlogIndex = ({ data}) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link to={`articles/${node.frontmatter.topic}${node.fields.slug}`}>
+                <Link to={`articles/${node.frontmatter.topic}/${node.frontmatter.subCat}${node.fields.slug}`}>
                   {title}
                 </Link>
               </h3>
@@ -58,6 +58,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            subCat
             topic
           }
         }
