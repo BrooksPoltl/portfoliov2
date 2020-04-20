@@ -9,8 +9,8 @@ const SubCatArticles = ({ data, pageContext }) => {
     const posts = data.allMarkdownRemark.edges
     return(
         <Layout>
-            <Seo title = {pageContext.topic}/>
-            <h1>{pageContext.topic}</h1>
+            <Seo title = {`${pageContext.topic} | ${pageContext.subCat}`}/>
+            <h1>{pageContext.subCat}</h1>
             {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
@@ -45,7 +45,7 @@ export default SubCatArticles;
 
 export const pageQuery = graphql`
 query BlogPostsByTopicByCats($topic: String!, $subCat: String!){
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {topic: {eq: $topic},subCat: {eq: $subCat}}}) {
+    allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {frontmatter: {topic: {eq: $topic},subCat: {eq: $subCat}}}) {
       edges {
         node {
           excerpt

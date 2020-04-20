@@ -60,14 +60,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={`articles/${previous.frontmatter.topic}${previous.fields.slug}`} rel="prev">
+              <Link to={`articles/${previous.frontmatter.topic}/${previous.frontmatter.subCat}${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`articles/${next.frontmatter.topic}${next.fields.slug}`} rel="next">
+              <Link to={`articles/${next.frontmatter.topic}/${next.frontmatter.subCat}${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -95,6 +95,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        subCat
       }
     }
   }
