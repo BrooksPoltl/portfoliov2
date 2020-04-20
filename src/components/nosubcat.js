@@ -5,9 +5,9 @@ import {Link, graphql} from 'gatsby';
 import { rhythm } from "../utils/typography"
 
 
-const Topic = ({ data, pageContext }) => {
+const NoSubCat = ({ data, pageContext }) => {
     const posts = data.allMarkdownRemark.edges
-    return (
+    return(
         <Layout>
             <Seo title = {pageContext.topic}/>
             <h1>{pageContext.topic}</h1>
@@ -21,7 +21,7 @@ const Topic = ({ data, pageContext }) => {
                           marginBottom: rhythm(1 / 4),
                         }}
                       >
-                        <Link to={`articles/${node.frontmatter.topic}${node.fields.slug}`}>
+                        <Link to={`articles/${node.frontmatter.topic}/${node.fields.slug}`}>
                           {title}
                         </Link>
                       </h3>
@@ -41,7 +41,7 @@ const Topic = ({ data, pageContext }) => {
     )
 };
 
-export default Topic;
+export default NoSubCat;
 
 export const pageQuery = graphql`
 query BlogPostsByTopic($topic: String!){

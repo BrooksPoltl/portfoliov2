@@ -2,7 +2,9 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
-  "component---src-components-topic-js": () => import("./../src/components/topic.js" /* webpackChunkName: "component---src-components-topic-js" */),
+  "component---cache-dev-404-page-js": () => import("./dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
+  "component---src-components-nosubcat-js": () => import("./../src/components/nosubcat.js" /* webpackChunkName: "component---src-components-nosubcat-js" */),
+  "component---src-components-subcat-js": () => import("./../src/components/subcat.js" /* webpackChunkName: "component---src-components-subcat-js" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-js": () => import("./../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-articles-js": () => import("./../src/pages/articles.js" /* webpackChunkName: "component---src-pages-articles-js" */),

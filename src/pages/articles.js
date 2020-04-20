@@ -5,7 +5,6 @@ import topicConfig from "../data/topicConfig";
 import { Link } from "gatsby";
 
 export default ({ data }) => {
-    console.log(data);
     const { topicLinks } = topicConfig;
     return (
         <Layout>
