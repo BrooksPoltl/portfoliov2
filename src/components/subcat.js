@@ -13,7 +13,6 @@ const NoSubCat = ({ pageContext }) => {
         currentTopic = topics[i];
       }
     }
-    console.log(currentTopic);
     return(
         <Layout>
             <Seo title = {pageContext.topic}/>

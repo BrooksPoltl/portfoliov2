@@ -7,6 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const noSubCatPage = path.resolve(`./src/components/nosubcat.js`)
   const subCatPage = path.resolve(`./src/components/subcat.js`)
+  const subCatArticlesPage = path.resolve(`./src/components/subcatarticles.js`)
   const result = await graphql(
     `
       {
@@ -35,6 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
   const topicBuilder = {};
+  const subCatBuilder = {};
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
 
@@ -44,6 +46,21 @@ exports.createPages = async ({ graphql, actions }) => {
     const topic = post.node.frontmatter.topic;
     const subCat = post.node.frontmatter.subCat;
     if (subCat) {
+      if (!subCatBuilder[topic]) {
+        subCatBuilder[topic] = {subCats:{}}
+      }
+      if (!subCatBuilder[topic].subCats[subCat]){
+        createPage({
+          path: `articles/${topic}/${subCat}`,
+          component: subCatArticlesPage,
+          context: {
+            slug: post.node.fields.slug,
+            subCat,
+            topic
+          },
+        })
+        subCatBuilder[topic].subCats[subCat] = true;
+      }
       createPage({
         path: `articles/${topic}/${subCat}${post.node.fields.slug}`,
         component: blogPost,

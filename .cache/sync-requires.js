@@ -8,6 +8,7 @@ exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/.cache/dev-404-page.js"))),
   "component---src-components-nosubcat-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/components/nosubcat.js"))),
   "component---src-components-subcat-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/components/subcat.js"))),
+  "component---src-components-subcatarticles-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/components/subcatarticles.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/pages/404.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/pages/about.js"))),
   "component---src-pages-articles-js": hot(preferDefault(require("/Users/BrooksPC/Documents/coding/portfoliov2/src/pages/articles.js"))),
