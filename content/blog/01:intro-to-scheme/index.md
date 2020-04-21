@@ -229,4 +229,50 @@ Since the `(random 10)` is split into 2 different function alls in normal order 
 
 #### LABS
 ##### Lab 1 
+The first problem for the lab was to modify the `plural` program to handle a word ending in y, but has a vowel in front of it (boy).
+```
+(define (plural wd)
+	(if (equal? (last wd) 'y)
+		(if (vowel? (last (bl wd)))
+		(word wd 's)
+		(word (bl wd) 'ies))
+	(word wd 's)))
+
+(define (vowel? letter)
+	(member? letter '(a e i o u)))
+```
+<br>
+
+
+I handled this by adding a conditional that checks for the second to last letter.
+<br>
+<br>
+The second assgnment was:
+```
+Define a procedure that takes three numbers as arguments and returns the sum of
+the squares of the two larger numbers.
+
+
+```
+My Solution: 
+
+```
+(define (twoLargerSums a b c)
+    (if (>= a b)
+        (if (>= b c)
+            (+ (square a) (square b))
+            (+ (square a) (square c)))
+        (if (>= a c)
+            (+ (square a) (square b))
+            (+ (square b) (square c))))
+)
+
+(define (square x)
+(* x x))
+```
+
+<br>
+<br>
+
+  
 ##### Lab 2 
