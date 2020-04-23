@@ -12,62 +12,6 @@ If you would like to start at the beginning start [here](http://localhost:8000/t
 I will be following the Summer 2010 [Calendar](http://inst.eecs.berkeley.edu/~cs61a/su10/index.html)
 so each week will consist of 4 lectures and 2 labs.
 
-#### READINGS
-##### 1.1 The Elements of Programming
-The section starts off saying that there are 3 mechanisms that languages utilize to simplify complex ideas:
-<br>
-primitive expressions: simplest entities within a language.
-<br>
-<br>
-means of combination: The ability to combine simple entities. 
-<br>
-<br>
-means of abstraction: The ability to name and manipulate combined elements.
-<br>
-<br>
-Breaking down a compound expression:
-<br>
-combination: `(+ 137 349)`
-<br>
-operator: `+`
-<br>
-operands: `137` `349`
-<br>
-<br>
-The interpreter runs in a "read-eval-print" loop. That is why it is not necessary to print stuff out like in other languages.
-<br>
-<br>
-Environment: The name-object pairs the interpreter keeps in memory.
-<br>
-<br>
-
-Compound Procedures can be used to build on top of other Compound Procedures:
-<br>
-```
-(define (sum-of-squares x y)
-(+ (square x) (square y))
-```
-<br>
-
-Compound Procedure: procedure that you make out of other procedures.
-
-Primitive Procedure: procedure built into the language ex: `+`
-<br>
-<br>
-Both are used exactly the same.
-<br>
-<br>
-When writing programs it is important to write modular code that doesn't care how the other things are computed, only what is computed. This is known as a Black-Box abstraction.
-<br>
-
-Lisp allows for block structure so you can nest a define in another define, and only the parent will have access to the nested define.
-<br>
-Lisp also allows the sub define functions to have access to parameters in the parents scope. This is called lexical scoping.
-<br>
-
-##### 1.2
-##### 1.3
-
 #### LECTURES
 ##### L01
 
@@ -276,6 +220,23 @@ normal
 Since the `(random 10)` is split into 2 different function alls in normal order you get different results.
 
 ##### L03
+###### Data vs Procedures
+Data is like a noun. Procedures are like verbs.
+<br>
+<br>
+Capitalization does not matter in scheme.
+Able to take in functions as arguments.
+`se` is the function for creating sentences. 
+
+###### Lambda
+
+The thing that makes a function.
+A thing that creates and can call a function without having to be named.
+<br>
+<br>
+PRED: short for predicate, predicate is a function whose range is a boolean (true or false).
+Every procedure has a lambda hidden inside of it.
+
 ##### L04
 
 #### LABS
@@ -325,5 +286,60 @@ My Solution:
 <br>
 <br>
 
-
 ##### Lab 1B
+
+#### READINGS
+##### 1.1 The Elements of Programming
+The section starts off saying that there are 3 mechanisms that languages utilize to simplify complex ideas:
+<br>
+primitive expressions: simplest entities within a language.
+<br>
+<br>
+means of combination: The ability to combine simple entities. 
+<br>
+<br>
+means of abstraction: The ability to name and manipulate combined elements.
+<br>
+<br>
+Breaking down a compound expression:
+<br>
+combination: `(+ 137 349)`
+<br>
+operator: `+`
+<br>
+operands: `137` `349`
+<br>
+<br>
+The interpreter runs in a "read-eval-print" loop. That is why it is not necessary to print stuff out like in other languages.
+<br>
+<br>
+Environment: The name-object pairs the interpreter keeps in memory.
+<br>
+<br>
+
+Compound Procedures can be used to build on top of other Compound Procedures:
+<br>
+```
+(define (sum-of-squares x y)
+(+ (square x) (square y))
+```
+<br>
+
+Compound Procedure: procedure that you make out of other procedures.
+
+Primitive Procedure: procedure built into the language ex: `+`
+<br>
+<br>
+Both are used exactly the same.
+<br>
+<br>
+When writing programs it is important to write modular code that doesn't care how the other things are computed, only what is computed. This is known as a Black-Box abstraction.
+<br>
+
+Lisp allows for block structure so you can nest a define in another define, and only the parent will have access to the nested define.
+<br>
+Lisp also allows the sub define functions to have access to parameters in the parents scope. This is called lexical scoping.
+<br>
+
+##### 1.2
+##### 1.3
