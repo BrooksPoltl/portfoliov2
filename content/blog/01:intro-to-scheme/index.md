@@ -239,6 +239,27 @@ Every procedure has a lambda hidden inside of it.
 
 ##### L04
 
+Using lambdas for control using procedures as data.
+Keep decides whether to keep data or not.
+
+##### first class datatype
+
+Rule of Thumb: 
+<br>
+They can be stored as a variable.
+<br>
+They can be stored inside a data type like a list.
+<br>
+You can return function  to make other functions.
+<br>
+`(let bindings body)`
+Binding is a name: value expression.  
+Bindings can't reference eachother during declaration because of applicative order.
+<br>
+`let*` allows you to reference other bindings during declaration by nesting the `let`s.
+<br>
+Want to keep as many variables local as possible.
+
 #### LABS
 ##### Lab 1A
 The first problem for the lab was to modify the `plural` program to handle a word ending in y, but has a vowel in front of it (boy).
