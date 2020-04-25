@@ -284,9 +284,8 @@ The second assgnment was:
 ```
 Define a procedure that takes three numbers as arguments and returns the sum of
 the squares of the two larger numbers.
-
-
 ```
+
 My Solution: 
 
 ```
@@ -363,4 +362,7 @@ Lisp also allows the sub define functions to have access to parameters in the pa
 <br>
 
 ##### 1.2
+
+
+
 ##### 1.3
