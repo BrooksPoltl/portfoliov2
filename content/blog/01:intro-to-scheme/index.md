@@ -365,4 +365,33 @@ Lisp also allows the sub define functions to have access to parameters in the pa
 
 
 
-##### 1.3
+##### 1.3 Formulating Abstractions with Higher Order Procedures
+
+Sigma Notation: The sum of numbers between A and B.
+This can be abstracted to create a procedure that handles all needs for doing a procedure to calculate a sum.
+<br>
+<br>
+Arguments for a Summation function:
+<br>
+<br>
+Term: Procedure for the sum.
+<br>
+a: start point
+<br>
+b: end point
+<br>
+next: The increment function ex: + 1 + 2 + 3
+<br>
+<br>
+
+You can use binary search like logic to find points within a function. By splitting the length repeatedly then checking accuracy you can continually get closer to the point you are looking for in the function. The calculated runtime for these functions are:
+<br>
+<br>
+```
+L = length of the functions start to end points
+T = tolerance, the distance from the given point that will return a result
+runtime:
+log(L/T)
+```
+Think of L/T as the possibilties between the two points.
+
