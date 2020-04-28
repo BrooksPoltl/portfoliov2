@@ -307,6 +307,29 @@ My Solution:
 <br>
 
 ##### Lab 1B
+Solution for #3 on lab: 
+<br>
+
+```
+(define (substitute sent old new)
+    (if (equal? sent '())
+        '()
+        (se (replace (first sent) old new) (substitute (bf sent) old new))))
+
+(define (replace wd old new)
+    (if (equal? wd old)
+        new
+        wd)
+)
+```
+<br>
+<br>
+
+Note to self, don't copy and paste function calls to check if your code is right because there might be special characters in there :P.
+<br>
+<br>
+The replace function here takes in the current word and checks to see if the word should be replaced, then it returns what the word should be.
+Substitute is a recursive function that iterates the sentence and returns the sentence with the replacements. 
 
 #### READINGS
 ##### 1.1 The Elements of Programming
