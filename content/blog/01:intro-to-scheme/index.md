@@ -1,6 +1,6 @@
 ---
 title: "01: Introduction to Scheme Programming"
-date: "2020-04-20T22:12:03.284Z"
+date: "2020-04-28T22:12:03.284Z"
 description: "Week 1 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
@@ -384,7 +384,18 @@ Lisp allows for block structure so you can nest a define in another define, and 
 Lisp also allows the sub define functions to have access to parameters in the parents scope. This is called lexical scoping.
 <br>
 
-##### 1.2
+##### 1.2 Procedures and the processes they generate
+###### Linear Recursion vs linear interative
+
+Recursive calls itself, interative uses a helper iterator function to loop through the possibilities.
+<br>
+<br>
+Tail-recursive: an iterative process in constant space.
+<br>
+<br>
+Tree-recursive: think fibonacci where it uses recursion multiple times.
+Tree recursive procedures are easy to identify, but not very efficient. It is possible one day a "smart compiler" could find these procedures and make them efficient.
+
 
 
 
