@@ -112,6 +112,33 @@ accumulate: combines things in list/sentence and returns result.
 map: applies function to each list in nested list, can return list of list still.
 
 ##### L11
+3 pieces to interpreter: 
+<br>
+the read-eval-print loop aka repl (I just learned this is the reason for https://repl.it).
+The last thing in a repl is a call to itself making it infinite.
+example: 
+<br>
+```
+(define (calc)
+    (display "calc: ")
+    (flush)
+    (print (calc-eval (read)))
+    (calc))
+```
+flush: adds an end of line character 
+<br>
+<br>
+Scheme has 4 kinds of expressions: 
+<br>
+self-evaluating (23 prints 23)
+<br>
+variables
+<br>
+function calls
+<br>
+special-forms
+
+
 ##### L12
 ##### L13
 
