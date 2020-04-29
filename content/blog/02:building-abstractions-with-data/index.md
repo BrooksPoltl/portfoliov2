@@ -41,8 +41,76 @@ Constant factors not very valuable in runtime because of Moore's law. Also as `n
 Highest power of `n` is the one that counts.
 
 ##### L08
+###### Recursion and Iteration
+
+```
+O(1) -------|
+O(log N)----| Searching
+O(N)--------|
+
+O(N log N)--|
+O(N**2) ----| Sorting
+
+O(2 ** N) --|
+O(N!)-------| Intractable
+O(N**N)-----|
+```
+
+Theoretically impossible to do better than O(N log N) for sorting. 
+<br>
+<br>
+intractable: You can run them, but with large n they will never stop running. 
+<br>
+<br>
+most of these algorithms have to be approximated to find a viable algorithm.
+<br>
+<br>
+O(N ** 3):
+<br>
+- matrix multiply
+
+###### space complexity
+
+Since a recursive process has to wait for the nested process to finish the space complexity is O(n) for a O(n) runtime procedure.
+<br>
+<br>
+Iterative process takes constant time complexity.
+
 ##### L09
+###### Data abstraction
+
+Abstract data type: doesn't exist in scheme, created by the programmer.
+<br>
+<br>
+List don't have to be treated as abstract data type.
+<br>
+<br>
+Sentence is a list constrained to only using words.
+Box diagrams: 
+<br>
+start arrow: beginning of diagram
+arrows point to box, not item in box.
+<br>
+<br>
+List procedures:
+<br>
+cons: add new element to the front of a list
+<br>
+list: creates a new list with arguments as items.
+<br>
+append: put together elements of lists.
+
 ##### L10
+###### Lisp Higher Order Functions:
+
+Every: computes function on every word in sentence.
+<br>
+Keep: Returns subset of a predicate if predicate is true.
+<br>
+accumulate: combines things in list/sentence and returns result.
+<br>
+map: applies function to each list in nested list, can return list of list still.
+
 ##### L11
 ##### L12
 ##### L13
