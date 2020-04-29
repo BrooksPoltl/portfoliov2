@@ -1,6 +1,7 @@
+---
 title: "02: Building Abstractions With Data"
-date: "2020-04-28T22:12:03.284Z"
-description: "Week 1 of CS61A Structure and Interpretation of Computer Programs"
+date: "2020-04-29T22:12:03.284Z"
+description: "Week 2 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
 ---
@@ -9,7 +10,14 @@ If you would like to start at the beginning start [here](http://localhost:8000/t
 
 #### LECTURES
 ##### L05
+This lecture goes over "User interface design" a lecture by Alan Kay. Alan Kay is the inventor of every aspect of the modern computer environment.
+<br>
+<br>
+
+Dynabook was a computer that looks like a calculator.
+
 ##### L06
+This lecture continues to play "User interface design". This specific lecture goes over the psychology of UI.
 ##### L07
 ##### L08
 
