@@ -160,6 +160,17 @@ deep list: only the leafs have data.
 
 ##### L13
 
+Two recursive calls (that run, if it is conditionally running one of two recursive calls it isn't) in a procedure shows that you are dealing with tree recursion.
+<br> 
+<br>
+Breadth first search: when traversing the tree it gets as wide as possible before continuing down the tree. Useful for searching. Think chess, the amount of possible chess moves are so large that it is better to search for the best possibilities with a lower degree of separation. 
+<br>
+<br>
+Depth first search: when traversing the tree it gets as deep as possible before continuing. Usually the information is more useful because it list out the parents and children relationships close together.
+<br>
+<br>
+parse tree: computes Datum, then left, then right.
+
 #### LABS
 ##### Lab 2A
 ##### Lab 2B
