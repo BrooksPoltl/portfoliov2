@@ -140,6 +140,24 @@ special-forms
 
 
 ##### L12
+
+trees: hierarchical data structure
+<br>
+<br>
+binary search tree: node to left smaller, node to right bigger.
+<br>
+<br>
+parse tree: branch node is operator, leaf nodes are operands
+<br>
+<br>
+leaf node: no children
+<br>
+<br>
+branch node: node with children
+<br>
+<br>
+deep list: only the leafs have data.
+
 ##### L13
 
 #### LABS
