@@ -176,8 +176,48 @@ parse tree: computes Datum, then left, then right.
 ##### Lab 2B
 
 #### READINGS
-##### 2.1
-##### 2.2
-##### 2.3
+##### 2.1 Introduction to data abstraction
+
+Abstract data can have a set of procedures known as an interface. These commonly require selectors and constructors.
+<br>
+example:
+```
+(make-rat n d) 
+; makes a rational number with numerator(n) and 
+;denomimator (d) this procedure is the constructor
+(numer x) ; this fetches the numerator of the rational
+;data structure (x)
+; This is the selector
+
+```
+
+<br>
+
+###### cons, car, cdr
+A cons cell is a pointer to two parts in memory. 
+<br>
+A car is a operation that extracts the first value of memory, cdr extracts the second.
+<br>
+<br>
+Data objects constructed from pairs are called list-structured data.
+
+
+##### 2.2 Hierarchical Data and the Closure Property
+
+`(cons 1 2)` notation is known as box-and-pointer notation.
+<br>
+<br>
+Closure property of cons: The ability for cdr to point to another cell. This allows the creation of hierarchical structures.
+<br>
+<br>
+This section goes over a lot of list procedures and tree stuff that was covered in lecture.
+
+
+##### 2.3 Symbolic Data
+
+In order to manipulate symbols we need to be able to represent data by their values instead of symbol. Lisp allows you to quote using `'`.
+<br>
+<br>
+
 
 
