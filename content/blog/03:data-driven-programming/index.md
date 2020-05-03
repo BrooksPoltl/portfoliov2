@@ -146,11 +146,29 @@ programmers: 1 operand = monadic, 2 operands = dyadic
 <br>
 <br>
 
-##### L38
-##### L39
-
 #### LAB
 ##### lab 3
+```
+(define (count-change amount)
+(cc amount '(50 25 10 5 1)))
+
+(define (cc amount kinds-of-coins)
+    (cond ((= amount 0) 1)
+    ((or (< amount 0) (equal? kinds-of-coins '())) 0)
+    (else (+ (cc amount
+                (cdr kinds-of-coins))
+    (cc (- amount 
+    (first-denomination kinds-of-coins))
+    kinds-of-coins)))))
+
+(define (first-denomination kinds-of-coins)
+(car kinds-of-coins))
+```
+This modifies the procedure on page 40-41 for count-change.
+<br>
+<br>
+This replaces the amount of coins with a sentence of coin amounts. I modified it to check for an empty array instead of 0, then when all possibilities of a denomination are checked I switch it to the remaining denominations using `cdr`. Then all I have to do to find the `first-denomination` is return `car` of the list.
+
 
 #### READINGS
 ##### 2.4
