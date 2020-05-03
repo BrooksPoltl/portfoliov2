@@ -171,5 +171,33 @@ This replaces the amount of coins with a sentence of coin amounts. I modified it
 
 
 #### READINGS
-##### 2.4
-##### 2.5
+##### 2.4 Multiple Representations for Abstract Data
+
+generic procedures: procedures that operate that may be represented in more than 1 way.
+<br>
+<br>
+type tags allow for specificity. Telling the generic procedure how to operate for that specific type.
+<br>
+<br>
+
+put: installs the item in the table
+<br>
+get: looks up the entry and returns item
+<br>
+<br>
+
+
+
+##### 2.5 Systems with Generic Operations
+
+Coercion: Objects of one type may be viewed as being of another type.
+<br>
+<br>
+Scheme checks to see if one type can be changed to another, if not it checks to see if the other can. If neither can change to the other it throws an error.
+
+<br>
+<br>
+
+Types can have hierarchies. For example integers are a subtype of rational numbers. And rational numbers are a supertype of integers. Numbers have a simple hierarchy known as a tower. With integers on the bottom and complex numbers on the top.
+
+
