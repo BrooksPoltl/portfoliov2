@@ -9,6 +9,30 @@ This article is a part of a series where I go through [teachyourselfcs](https://
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
 #### LECTURES
 ##### L18
+
+OOP is a implementation of lambda.
+<br>
+<br>
+
+class
+<br>
+instance
+<br>
+instantiation variable 
+<br>
+clause
+<br>
+method
+<br>
+instance-vars
+<br>
+Class variables
+<br>
+<br>
+
+Anytime you change the value of something use a exclamation point to signify you are not doing functional programming.
+
+
 ##### L19
 ##### L20
 ##### L21
