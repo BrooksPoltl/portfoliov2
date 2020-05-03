@@ -119,6 +119,33 @@ You can still use these in a functional way by assigning at the beginning and ne
 
 
 ##### L17
+
+Horizontal slices through the table: messaging. The name of the interface knows all the function.
+
+<br>
+
+Horizontal slicing good for making prototypes.
+
+<br>
+
+4 kinds of numbers:
+<br>
+integer
+<br>
+rational
+<br>
+real
+<br>
+complex
+<br>
+<br>
+regular people: 1 operand = unary, 2 operands = binary
+<br>
+<br>
+programmers: 1 operand = monadic, 2 operands = dyadic
+<br>
+<br>
+
 ##### L38
 ##### L39
 
