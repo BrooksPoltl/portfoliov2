@@ -55,6 +55,33 @@ Substitution works for functional programming, but not all paradigms.
 <br>
 
 ##### L15
+Why use a scheme interpreter to build a new one? 
+<br>
+<br>
+Helps understand model of evaluation
+<br>
+Experiment with modifications to scheme
+<br>
+Most of the original interpreter is written in scheme.
+<br>
+Conveys a big concept in cs which is universality.
+<br>
+<br>
+
+universality is the concept of one machine that can run a large breadth of functions.
+<br>
+<br>
+Applicative: argument values
+<br>
+Normal: argument expressions
+<br>
+
+Read: takes the input and turns it into box pointer diagrams.
+<br>
+Quote: takes cadr of the next expression.
+<br>
+
+
 ##### L16
 ##### L17
 ##### L38
