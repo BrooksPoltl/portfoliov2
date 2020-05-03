@@ -76,13 +76,48 @@ Applicative: argument values
 Normal: argument expressions
 <br>
 
-Read: takes the input and turns it into box pointer diagrams.
+Read: takes the input and turns it into box pointer diagrams. 
 <br>
 Quote: takes cadr of the next expression.
 <br>
 
 
 ##### L16
+
+concepts:
+<br>
+type tagging
+<br>
+data directed programming
+<br>
+message passing
+<br>
+
+type tagging: car is the symbol, cdr is the arguments.
+<br>
+
+data directed programming: write one operation that does everything.
+<br>
+Not functional programming if you call the same expression and get different results.
+<br>
+```
+(get 'brian 'address)
+; #f
+(put 'brian 'address '(781 Soda))
+; ok
+(get 'brian 'address)
+; (781 soda)
+```
+
+<br>
+<br>
+
+This is not functional because same expression returns different results.
+You can still use these in a functional way by assigning at the beginning and never reassigning.
+<br>
+
+
+
 ##### L17
 ##### L38
 ##### L39
