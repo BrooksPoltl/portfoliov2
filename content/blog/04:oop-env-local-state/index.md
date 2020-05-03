@@ -34,6 +34,21 @@ Anytime you change the value of something use a exclamation point to signify you
 
 
 ##### L19
+
+OOP implements inheritance through delegation (assigning to something else).
+<br>
+<br>
+Child looks for the methods and if it can't find it the message is sent to the parent.
+<br>
+<br>
+default-method: what to do when the parent can't handle the message.
+<br>
+<br>
+initialize: method only used once to setup the class
+<br>
+<br>
+dispatch procedure: takes message and returns a method.
+
 ##### L20
 ##### L21
 ##### L22
