@@ -6,7 +6,7 @@ topic: "teachyourselfcs"
 subCat: "programming"
 ---
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
-If you would like to start at the beginning start [here](http://localhost:8000/teachyourselfcs/programming/00:getting-started/).
+If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
 
 #### INTRO
 I will be following the Summer 2010 [Calendar](http://inst.eecs.berkeley.edu/~cs61a/su10/index.html)

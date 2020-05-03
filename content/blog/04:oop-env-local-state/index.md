@@ -5,7 +5,8 @@ description: "Part 4 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
 ---
-
+This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
+If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
 #### LECTURES
 ##### L18
 ##### L19

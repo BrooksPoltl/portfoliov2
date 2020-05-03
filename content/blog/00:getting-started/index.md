@@ -6,7 +6,7 @@ topic: "teachyourselfcs"
 subCat: "programming"
 ---
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
-If you would like to start at the beginning start [here](http://localhost:8000/teachyourselfcs/programming/00:getting-started/).
+If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
 
 ##### Plans for this series
 I will be reading through the recommended book for learning programming [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html).
