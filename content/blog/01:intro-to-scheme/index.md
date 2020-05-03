@@ -1,7 +1,7 @@
 ---
 title: "01: Introduction to Scheme Programming"
 date: "2020-04-28T22:12:03.284Z"
-description: "Week 1 of CS61A Structure and Interpretation of Computer Programs"
+description: "Part 1 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
 ---

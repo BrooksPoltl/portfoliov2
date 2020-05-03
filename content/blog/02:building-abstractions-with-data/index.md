@@ -1,7 +1,7 @@
 ---
 title: "02: Building Abstractions With Data"
-date: "2020-04-29T22:12:03.284Z"
-description: "Week 2 of CS61A Structure and Interpretation of Computer Programs"
+date: "2020-05-02T22:12:03.284Z"
+description: "Part 2 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
 ---
@@ -173,7 +173,97 @@ parse tree: computes Datum, then left, then right.
 
 #### LABS
 ##### Lab 2A
+2.2 
+<br>
+```
+(define (make-point x y)
+    (cons x y))
+
+(define (make-segment a b)
+    (cons a b))
+
+(define (start-segment pln)
+(car pln))
+(define (end-segment pln)
+(cdr pln))
+
+(define (x-point pnt)
+(car pnt))
+
+(define (y-point pnt)
+(cdr pnt))
+
+; compute the average between two x coords
+;compute the average between two y coords
+(define (midpoint-segment pln)
+(print-point (make-point (/ (- (x-point (start-segment pln)) (x-point (end-segment pln))) 2) (/ (- (y-point (start-segment pln)) (y-point (end-segment pln))) 2))))
+
+(define (plane x1 x2 y1 y2)
+(make-segment (make-point x1 y1) (make-point x2 y2)))
+
+(define (print-point p)
+(newline)
+(display "(")
+(display (x-point p))
+(display ",")
+(display (y-point p))
+(display ")"))
+```
+2.3 
+<br>
+```
+(define (make-rect s1 s2 s3 s4)
+(cons s1 (cons s2 (cons s3 (cons s4 s1))))
+)
+
+(define (rect x1 y1 x2 y2 x3 y3 x4 y4)
+(make-rect 
+(plane x1 x2 y1 y2) 
+(plane x2 x3 y2 y3)
+(plane x3 x4 y3 y4)
+(plane x4 x1 y4 y1)
+))
+
+(define (perimeter rect)
+(define lw (make-lw (car rect) (car (cdr (cdr rect)))))
+(+ (* 2 (car lw)) (* 2 (cdr lw)))
+)
+
+(define (area rect)
+(define lw (make-lw (car rect) (car (cdr (cdr rect)))))
+(* (car lw) (cdr lw))
+)
+    
+
+(define (make-lw p1 p2)
+(cons (- (x-point (start-segment p2)) (x-point (start-segment p1))) (- (y-point (start-segment p2)) (y-point (start-segment p1)))))
+
+    
+; (0,0) (0,2) (2,2) (2,0)
+```
+to find area and perimeter all you need is the bottom left and top left points. 
+<br>
+<br>
+perimeter = 2l + 2w
+<br>
+area = l*w
+
 ##### Lab 2B
+2.27
+```
+(define (reverse l)
+  (if (equal? '() l)
+     '()
+     (append (reverse (cdr l)) (list (car l)))
+  )
+)
+(define (deep-reverse l)
+  (if (equal? '() l)
+     '()
+     (append  (deep-reverse (reverse (cdr l))) (list (reverse (car l))))
+  ))
+```
+This uses the function from reverse to do a deep reverse of list of list.
 
 #### READINGS
 ##### 2.1 Introduction to data abstraction
@@ -216,8 +306,7 @@ This section goes over a lot of list procedures and tree stuff that was covered 
 ##### 2.3 Symbolic Data
 
 In order to manipulate symbols we need to be able to represent data by their values instead of symbol. Lisp allows you to quote using `'`.
-<br>
-<br>
+
 
 
 
