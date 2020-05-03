@@ -7,12 +7,58 @@ subCat: "programming"
 ---
 
 #### LECTURES
-##### l14
-##### l15
-##### l16
-##### l17
-##### l38
-##### l39
+##### L14
+2 types of expressions:
+```
+                 expr
+    _______________|___________________    
+    |                                 |
+    atomic                           list
+    ___|__________                     |
+    |            |            _______________________       
+self-eval    variables        procedures special-forms
+```
+
+```
+    (define (eval exp)
+    (cond ((self-evaluating? exp) exp)
+    ((symbol? exp) (look-up-global-value exp))
+    ((special-form? exp) (do-special-form exp))
+    (else (apply (eval (car exp))
+    (map eval (cdr exp)) ))))
+```
+Above is the eval function for an interpreter in Scheme. Notice it attempts to determine the type of expression then has a function to handle them. If it is a list it recursively calls eval to break the list into primitives.
+<br>
+<br>
+```
+    (define (apply proc args)
+        (if (primitive? proc)
+            (do-magic proc args)
+            (eval (substitute (body proc) (formals proc) args))))
+```
+apply takes a procedure and a list of arguments. In the else of `eval` apply gets the first argument which will always the procedure call, and then it maps the arguments.
+<br>
+<br>
+
+If the procedure is a primitive it gets handled at the machine language level.
+
+<br>
+<br>
+
+If the procedure is created by a lambda,
+it has formal parameters and a body.
+<br>
+<br>
+Scheme uses environmental model of evaluation, but we are building a substitution model interpreter right now. 
+Substitution works for functional programming, but not all paradigms.
+<br>
+<br>
+
+##### L15
+##### L16
+##### L17
+##### L38
+##### L39
 
 #### LAB
 ##### lab 3
