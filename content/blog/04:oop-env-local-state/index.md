@@ -105,9 +105,44 @@ make an env with params bound to args
 Eval body in new env.
 <br>
 
-
 ##### L22
+Environemnt:
+<br>
+frame
+<br>
+maps variables to values
+<br>
+pointer to "enclosing environment"
+<br>
+All evals are done in a environment.
+<br>
+<br>
+
+Creates a new environment when you invoke a procedure.
+<br>
+
+Can create a pointer to another environment to inherit those variables. 
+<br>
+<br>
+1.) look in current env, if found return value
+<br>
+2.) look in parent env, if found return value
+<br>
+3.) if not in parent env returne UNBOUND VARIABLE error.
+
+Lexical scoping: extends lambda environment 
+<br>
+ 
+dynamic scope: extends specific environments.
+<br>
+
+
+
 ##### L23
+
+Professor out, more review on environments.
+<br>
+
 
 #### LABS
 ##### 4A
