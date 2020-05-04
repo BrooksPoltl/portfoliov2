@@ -50,7 +50,62 @@ initialize: method only used once to setup the class
 dispatch procedure: takes message and returns a method.
 
 ##### L20
+
+OOP: With every object you have the procedures that work on it.
+<br>
+<br>
+
+Polymorphism: Ability to work with other types in the sending op messages.
+<br>
+<br>
+
+Garbage collection: automatic storage management.
+
+<br>
+
 ##### L21
+
+global variables: available to anyone
+<br>
+class variables: available to that class
+<br>
+instance variables available to that instance
+<br>
+
+Persistent local state variables.
+Lambda inside a let creates local state variables.
+<br>
+<br>
+
+Can wrap lambda in parenthesis to invoke it after creating it.
+
+<br>
+<br>
+
+Substitution model (eval exp):
+<br>
+Eval all sub expressions
+<br>
+apply procedure to arg list
+<br>
+substitute args for params in body
+<br>
+eval modified body
+<br>
+<br>
+
+Environment model (eval exp in env):
+<br>
+Eval all sub expressions.
+<br>
+apply procedure to arg list
+<br>
+make an env with params bound to args
+<br>
+Eval body in new env.
+<br>
+
+
 ##### L22
 ##### L23
 
