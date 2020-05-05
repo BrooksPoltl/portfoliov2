@@ -146,7 +146,25 @@ Professor out, more review on environments.
 
 #### LABS
 ##### 4A
+4A doesn't have code problems.
 ##### 4B
+```
+(define (make-account init-amount)
+(let ((balance init-amount) (transactions '()))
+    (define (withdraw amount)
+        (set! transactions (append transactions (list 'withdraw amount)))
+        (set! balance (- balance amount)) balance)
+    (define (deposit amount)
+        (set! transactions (append transactions (list 'deposit amount)))
+        (set! balance (+ balance amount)) balance)
+    (define (dispatch msg)
+        (cond 
+            ((eq? msg 'withdraw) withdraw)
+            ((eq? msg 'deposit) deposit)
+            ((eq? msg 'balance) balance)
+            ((eq? msg 'transactions) transactions)))
+        dispatch))
+```
 
 #### READINGS
 ##### 3.1 Assignment and local state
@@ -180,4 +198,27 @@ This opens up the program to bugs not able to be created in functional programmi
 
 
 
-##### 3.2
+##### 3.2 Evironment model of evaluation
+
+Environment: a place in which variables are stored.
+<br>
+<br>
+
+Environment is a sequence of frames, each frame a table of bindings.
+<br>
+<br>
+
+Each frame points to a parent environment unless it is the global environment.
+<br>
+<br>
+
+When defining a procedure the global env creates a binding tying the name of the procedure to the lambda procedure itself.
+<br>
+<br>
+
+State within a procedure is bound within the frame of the procedure and not the environment of the enclosing procedure.
+
+<br>
+
+
+
