@@ -149,5 +149,35 @@ Professor out, more review on environments.
 ##### 4B
 
 #### READINGS
-##### 3.1
+##### 3.1 Assignment and local state
+
+Delayed evaluation: decoupling time from events during evaluation.
+<br>
+<br>
+Assignment operator: allows the ability to change the value associated with a variable.
+<br>
+<br>
+
+set!: exclamation shows reassignment. 
+<br>
+<br>
+Reassignment makes the substitution model no longer an adequate model, because the substitution model does not keep track of occurences, it uses the first occurence to sustitute in the body.
+<br>
+<br>
+Reassignment can make 2 identical function calls have different results. The term for not using reassigment in functions is "referential transparency".
+<br>
+<br>
+Not having referential transparency means that you are unable to know what an object is without observing its state.
+<br>
+<br>
+
+Programming that makes extensive use of reassignment is considered "imperative programming".
+<br>
+<br>
+
+This opens up the program to bugs not able to be created in functional programming.
+
+
+
+
 ##### 3.2
