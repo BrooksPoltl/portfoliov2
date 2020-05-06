@@ -9,7 +9,24 @@ This article is a part of a series where I go through [teachyourselfcs](https://
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
 #### LECTURES
 ##### L24
+
+If sharing storage mutating may affect data, if not sharing storage it won't.
+<br>
+<br>
+
+Can't mutate quoted list. Have to use cons or `list`. 
+<br>
+<br>
+eq? is when it is the same location in memory.
+equal? is equality.
+
 ##### L25
+
+Table: association between keys and values
+<br>
+<br>
+
+
 ##### L26
 ##### L27
 ##### L28
