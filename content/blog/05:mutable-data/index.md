@@ -50,9 +50,36 @@ If underlying calculation is not functional you can't use memoization.
 
 ##### L26
 
+vector (array): indexed list
+<br>
+<br>
+vector best if needing to access a certain element a lot, accessing a value is o(1) instead of o(n) (worse case).
+<br>
+<br>
 
+if you need to build up a list element by element list are faster.
 
 ##### L27
+
+streams: returns the first element, and a promise to compute the rest later. 
+
+<br>
+<br>
+
+Modern processers guess where the test is going to be and starts calculating the rest while still doing the test.
+
+<br>
+<br>
+
+delay: constructor for promises.
+
+```
+(delay exp) => (lambda () exp)
+```
+<br>
+<br>
+promise remembers what it is returning to.
+
 ##### L28
 ##### L29
 ##### L36
