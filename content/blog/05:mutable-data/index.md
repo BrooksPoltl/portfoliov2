@@ -78,9 +78,31 @@ delay: constructor for promises.
 ```
 <br>
 <br>
+
 promise remembers what it is returning to.
 
 ##### L28
+
+Integers computes the next integer just in time for the next computation to be run.
+<br>
+<br>
+
+Only use streams in functional programs.
+Chapter three is about systems that change state over time.
+<br>
+<br>
+
+Parallelism simple with functional programming, very hard with mutating variables.
+
+<br>
+<br>
+
+Scheme uses normal order because it supports mutations. 
+<br>
+<br>
+
+Haskell is a purely functional language that uses applicative order.
+
 ##### L29
 ##### L36
 ##### L37
