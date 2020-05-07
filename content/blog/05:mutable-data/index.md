@@ -168,10 +168,31 @@ read translates what you type into box and pointer form.
 <br>
 <br>
 
-
- 
-
 ##### L37
+
+This lecture went over the logo language.
+<br>
+<br>
+
+lexical scope: 
+<br>
+allows local state vars (OOP)
+<br>
+prevents capture bugs
+<br>
+faster compiled code
+<br>
+<br>
+
+dynamic scope: 
+<br>
+allows first class exprs
+<br>
+allows "semi-global" vars
+<br>
+better debugging environment
+
+
 
 #### LABS
 ##### Lab 5A
