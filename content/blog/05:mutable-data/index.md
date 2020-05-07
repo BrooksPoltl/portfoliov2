@@ -26,8 +26,32 @@ Table: association between keys and values
 <br>
 <br>
 
+put: if no key in the table, create new one.
+<br>
+<br>
+
+2d table: a key that has a table structure as its cdr.
+<br>
+<br>
+
+Runtime for 2d table: n + y where n is the size of the table and y is the size of the second table.
+<br>
+<br>
+
+2 lookups for key value store. assoc and assq. 
+<br>
+<br>
+memoization: storing previous calculations to build a result.
+<br>
+<br>
+
+If underlying calculation is not functional you can't use memoization.
+
 
 ##### L26
+
+
+
 ##### L27
 ##### L28
 ##### L29
