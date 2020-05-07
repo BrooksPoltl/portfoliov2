@@ -147,6 +147,30 @@ thunk: procedure with no arguments
 thread: way of having many things happen at once in one program.
 
 ##### L36
+
+Old systems: take in variable and computes function.
+
+<br>
+<br>
+
+new systems: take in variable and function and compute function.
+
+<br>
+<br>
+
+This means that one machine can compute a function.
+
+<br>
+<br>
+
+read translates what you type into box and pointer form.
+
+<br>
+<br>
+
+
+ 
+
 ##### L37
 
 #### LABS
