@@ -84,11 +84,13 @@ promise remembers what it is returning to.
 ##### L28
 
 Integers computes the next integer just in time for the next computation to be run.
+
 <br>
 <br>
 
 Only use streams in functional programs.
 Chapter three is about systems that change state over time.
+
 <br>
 <br>
 
@@ -98,12 +100,52 @@ Parallelism simple with functional programming, very hard with mutating variable
 <br>
 
 Scheme uses normal order because it supports mutations. 
+
 <br>
 <br>
 
 Haskell is a purely functional language that uses applicative order.
 
 ##### L29
+
+Your operating system can assign you a port number.
+
+<br>
+<br>
+
+packet: burst of information you throw out and hope for the best.
+
+<br>
+<br>
+
+internet: network of networks
+
+<br>
+<br>
+
+Router connects to people outside your network.
+
+<br>
+<br>
+
+worldwide unreliable packets, because the network traverses many computers that could crash.
+<br>
+<br>
+
+TCP: Transmission control protocol, provides worldwide reliable streams.
+<br>
+<br>
+socket: abstract data type holds port numbers and other stuff.
+<br>
+<br>
+
+thunk: procedure with no arguments
+
+<br>
+<br>
+
+thread: way of having many things happen at once in one program.
+
 ##### L36
 ##### L37
 
