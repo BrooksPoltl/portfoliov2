@@ -199,7 +199,22 @@ better debugging environment
 ##### Lab 5B
 
 #### READINGS
-##### 3.3
+##### 3.3 Mutable Data
+
+data objects that have a setter defined are known as mutable data objects.
+<br>
+<br>
+
+You can build table by gluing box-pointers together. A table with a arbitrary value at the start of the table is called a headed table.
+<br>
+<br>
+
+You can use a lookup procedure to get values out of the table given a key.
+<br>
+<br>
+
+
+
 ##### 4.1.1 - 4.1.6
 
 
