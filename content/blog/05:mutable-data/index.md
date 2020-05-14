@@ -5,16 +5,19 @@ description: "Part 5 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
 ---
+
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
+
 #### LECTURES
+
 ##### L24
 
 If sharing storage mutating may affect data, if not sharing storage it won't.
 <br>
 <br>
 
-Can't mutate quoted list. Have to use cons or `list`. 
+Can't mutate quoted list. Have to use cons or `list`.
 <br>
 <br>
 eq? is when it is the same location in memory.
@@ -38,7 +41,7 @@ Runtime for 2d table: n + y where n is the size of the table and y is the size o
 <br>
 <br>
 
-2 lookups for key value store. assoc and assq. 
+2 lookups for key value store. assoc and assq.
 <br>
 <br>
 memoization: storing previous calculations to build a result.
@@ -46,7 +49,6 @@ memoization: storing previous calculations to build a result.
 <br>
 
 If underlying calculation is not functional you can't use memoization.
-
 
 ##### L26
 
@@ -61,7 +63,7 @@ if you need to build up a list element by element list are faster.
 
 ##### L27
 
-streams: returns the first element, and a promise to compute the rest later. 
+streams: returns the first element, and a promise to compute the rest later.
 
 <br>
 <br>
@@ -76,6 +78,7 @@ delay: constructor for promises.
 ```
 (delay exp) => (lambda () exp)
 ```
+
 <br>
 <br>
 
@@ -99,7 +102,7 @@ Parallelism simple with functional programming, very hard with mutating variable
 <br>
 <br>
 
-Scheme uses normal order because it supports mutations. 
+Scheme uses normal order because it supports mutations.
 
 <br>
 <br>
@@ -174,7 +177,7 @@ This lecture went over the logo language.
 <br>
 <br>
 
-lexical scope: 
+lexical scope:
 <br>
 allows local state vars (OOP)
 <br>
@@ -184,7 +187,7 @@ faster compiled code
 <br>
 <br>
 
-dynamic scope: 
+dynamic scope:
 <br>
 allows first class exprs
 <br>
@@ -192,13 +195,14 @@ allows "semi-global" vars
 <br>
 better debugging environment
 
-
-
 #### LABS
+
 ##### Lab 5A
+
 ##### Lab 5B
 
 #### READINGS
+
 ##### 3.3 Mutable Data
 
 data objects that have a setter defined are known as mutable data objects.
@@ -213,8 +217,22 @@ You can use a lookup procedure to get values out of the table given a key.
 <br>
 <br>
 
+##### 4.1.1 - 4.1.6 Metalinguistic abstraction
 
+Evaluator: A procedure that when applied to an expression can perform the action required for the expression.
+<br>
+<br>
+The evaluator is just another program.
+<br>
+<br>
 
-##### 4.1.1 - 4.1.6
+metacircular: An evaluator that is written in the language it evaluates.
+<br>
+<br>
 
+eval: takes as arguments an argument and an expression. Then it classifies the expression and directs its evaluation. Eval also looks up variables within the expression.
+<br>
+<br>
 
+Apply:
+Apply takes a procedure and list of arguments. Constructs a environment for compound procedures.

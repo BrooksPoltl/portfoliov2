@@ -1,17 +1,17 @@
 var plugins = [{
-      plugin: require('/Users/BrooksPC/Documents/coding/portfoliov2/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/brookspoltl/Documents/coding/portfoliov2/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/BrooksPC/Documents/coding/portfoliov2/node_modules/gatsby-plugin-feed/gatsby-ssr'),
+      plugin: require('/Users/brookspoltl/Documents/coding/portfoliov2/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/BrooksPC/Documents/coding/portfoliov2/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/brookspoltl/Documents/coding/portfoliov2/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Gatsby Starter Blog","short_name":"GatsbyJS","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/usb.svg"},
     },{
-      plugin: require('/Users/BrooksPC/Documents/coding/portfoliov2/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/brookspoltl/Documents/coding/portfoliov2/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/BrooksPC/Documents/coding/portfoliov2/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      plugin: require('/Users/brookspoltl/Documents/coding/portfoliov2/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

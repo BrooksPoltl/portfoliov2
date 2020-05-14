@@ -1,1 +1,1 @@
-module.exports = require("/Users/BrooksPC/Documents/coding/portfoliov2/src/utils/typography")
+module.exports = require("/Users/brookspoltl/Documents/coding/portfoliov2/src/utils/typography")
