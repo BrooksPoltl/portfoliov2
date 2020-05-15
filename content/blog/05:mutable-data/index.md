@@ -1,6 +1,6 @@
 ---
 title: "05: Mutable Data and the Metacircular Evaluator"
-date: "2020-05-06T22:12:03.284Z"
+date: "2020-05-15T22:12:03.284Z"
 description: "Part 5 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
