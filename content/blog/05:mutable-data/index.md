@@ -199,7 +199,11 @@ better debugging environment
 
 ##### Lab 5A
 
+5A mostly drawing diagrams.
+
 ##### Lab 5B
+
+Need access to Berkeley's login for the resources for 5B.
 
 #### READINGS
 
