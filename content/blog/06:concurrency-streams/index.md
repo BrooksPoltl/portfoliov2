@@ -45,6 +45,31 @@ three way handshake: client sends to server, server sends to client, client send
 
 ##### L31
 
+Your processer has memory inside of it to do computations with data very fast (ram). If second load called before first store happens you can get a concurrency issue.
+<br>
+<br>
+
+Have to "lock out" the variable while it is being used.
+<br>
+<br>
+Serializer: takes a procedure and returns a protected procedure.
+Prevents procedures from overlapping.
+<br>
+<br>
+
+Better to crash than to get wrong answer, because wrong answers pile up without you noticing them.
+<br>
+<br>
+
+Inefficiency: not using parrallelism at all
+<br>
+<br>
+Deadlock: 2 threads locked waiting for eachother to finish
+<br>
+<br>
+
+unfairness: process A wins and process B can't be won.
+
 ##### L32
 
 ##### L33
