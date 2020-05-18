@@ -13,6 +13,36 @@ If you would like to start at the beginning start [here](https://bpp.dev/article
 
 ##### L30
 
+Client/Server programming
+<br>
+<br>
+
+Have a host, connects with the "internet address".
+Then you also have a port on that host to connect to.
+
+<br>
+<br>
+
+Running out of internet addresses (4 bil), not because of 4 bil computers buts because of unassigned addresses.
+<br>
+<br>
+
+To solve this ipv6 was created.
+<br>
+<br>
+
+https: secure http
+<br>
+<br>
+
+socket is an abstract datatype: 2 way internet connection.
+<br>
+<br>
+
+three way handshake: client sends to server, server sends to client, client sends back to server.
+<br>
+<br>
+
 ##### L31
 
 ##### L32
