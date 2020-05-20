@@ -68,9 +68,31 @@ Deadlock: 2 threads locked waiting for eachother to finish
 <br>
 <br>
 
-unfairness: process A wins and process B can't be won.
+unfairness: process A wins and process B can't win.
 
 ##### L32
+
+Correct answer. Consistent within sequential order of the evaluated threads.
+Same answer as no parallelism.
+<br>
+<br>
+
+serial: one after the other
+<br>
+<br>
+
+Most programs aren't programmed with deadlock in mind, because processes are very fast.
+<br>
+<br>
+
+Figure out about the deadlock from thread maintenance in the database, then you kill one of the threads.
+<br>
+<br>
+
+Resource starvation: several threads want resource. One thread keeps getting the resource.
+<br>
+<br>
+mutex: object that attemps to aquire and realease
 
 ##### L33
 
