@@ -92,9 +92,11 @@ Figure out about the deadlock from thread maintenance in the database, then you 
 Resource starvation: several threads want resource. One thread keeps getting the resource.
 <br>
 <br>
-mutex: object that attemps to aquire and realease
+mutex: object that attempts to aquire and release
 
 ##### L33
+
+Duplicate video
 
 ##### L34
 
