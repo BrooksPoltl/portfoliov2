@@ -7,7 +7,7 @@ subCat: "programming"
 ---
 
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
-If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
+If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
 #### LECTURES
 
@@ -100,7 +100,52 @@ Duplicate video
 
 ##### L34
 
+memoization: remembering result of expression and using that to build the next expression.
+<br>
+<br>
+
+Stream uses JIT (just in time) to where it calculates the value whenever it is needed.
+<br>
+<br>
+Only use streams if program is functional.
+<br>
+<br>
+Parts of the interpreter and computer are non-functional, but they provide a layer of abstraction at the program level that allows for safe multiprocessing if you write a functional program.
+
 ##### L35
+
+Therac-25
+<br>
+Software that had a bug that caused some cancer patients to die of overdose.
+<br>
+<br>
+
+Software doesnt degrade, but has problems with reliability because of the amount of possibilities that could go wrong that the real world doesnt have. Many layers of abstraction create a black box that can have underlying problems.
+<br>
+<br>
+
+No limit to how complicated a software program can get.
+<br>
+<br>
+
+Therac was multithreaded, must do error checking.
+<br>
+<br>
+
+There were error messages that werent really errors, when a real error occurs operators will bypass because it is likely not a big deal.
+
+<br>
+<br>
+
+Documentation, didn't help people understand issues that happened.
+<br>
+<br>
+
+Initially people thought it was operator error since the machines most of the time (we know concurrency issues can cause this). Sometimes it actually was operator error, but it was because of poor user interface design and bad error messaging.
+<br>
+<br>
+
+They found error and fixed it, but just because you found a real error doesn't mean more errors can't be within the program. They shipped the bugfix without extensive testing to make sure the issue is really resolved.
 
 ##### L38
 

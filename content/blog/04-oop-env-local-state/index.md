@@ -5,9 +5,12 @@ description: "Part 4 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
 ---
+
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
-If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00:getting-started/).
+If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
+
 #### LECTURES
+
 ##### L18
 
 OOP is a implementation of lambda.
@@ -18,7 +21,7 @@ class
 <br>
 instance
 <br>
-instantiation variable 
+instantiation variable
 <br>
 clause
 <br>
@@ -31,7 +34,6 @@ Class variables
 <br>
 
 Anytime you change the value of something use a exclamation point to signify you are not doing functional programming.
-
 
 ##### L19
 
@@ -106,6 +108,7 @@ Eval body in new env.
 <br>
 
 ##### L22
+
 Environemnt:
 <br>
 frame
@@ -121,7 +124,7 @@ All evals are done in a environment.
 Creates a new environment when you invoke a procedure.
 <br>
 
-Can create a pointer to another environment to inherit those variables. 
+Can create a pointer to another environment to inherit those variables.
 <br>
 <br>
 1.) look in current env, if found return value
@@ -130,24 +133,25 @@ Can create a pointer to another environment to inherit those variables.
 <br>
 3.) if not in parent env returne UNBOUND VARIABLE error.
 
-Lexical scoping: extends lambda environment 
+Lexical scoping: extends lambda environment
 <br>
- 
+
 dynamic scope: extends specific environments.
 <br>
-
-
 
 ##### L23
 
 Professor out, more review on environments.
 <br>
 
-
 #### LABS
+
 ##### 4A
+
 4A doesn't have code problems.
+
 ##### 4B
+
 ```
 (define (make-account init-amount)
 (let ((balance init-amount) (transactions '()))
@@ -158,7 +162,7 @@ Professor out, more review on environments.
         (set! transactions (append transactions (list 'deposit amount)))
         (set! balance (+ balance amount)) balance)
     (define (dispatch msg)
-        (cond 
+        (cond
             ((eq? msg 'withdraw) withdraw)
             ((eq? msg 'deposit) deposit)
             ((eq? msg 'balance) balance)
@@ -167,6 +171,7 @@ Professor out, more review on environments.
 ```
 
 #### READINGS
+
 ##### 3.1 Assignment and local state
 
 Delayed evaluation: decoupling time from events during evaluation.
@@ -176,7 +181,7 @@ Assignment operator: allows the ability to change the value associated with a va
 <br>
 <br>
 
-set!: exclamation shows reassignment. 
+set!: exclamation shows reassignment.
 <br>
 <br>
 Reassignment makes the substitution model no longer an adequate model, because the substitution model does not keep track of occurences, it uses the first occurence to sustitute in the body.
@@ -194,9 +199,6 @@ Programming that makes extensive use of reassignment is considered "imperative p
 <br>
 
 This opens up the program to bugs not able to be created in functional programming.
-
-
-
 
 ##### 3.2 Evironment model of evaluation
 
@@ -219,6 +221,3 @@ When defining a procedure the global env creates a binding tying the name of the
 State within a procedure is bound within the frame of the procedure and not the environment of the enclosing procedure.
 
 <br>
-
-
-
