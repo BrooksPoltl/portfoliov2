@@ -149,6 +149,11 @@ They found error and fixed it, but just because you found a real error doesn't m
 
 ##### L38
 
+mapReduce is really mapSortReduce, sorts one value then reduces it.
+<br>
+<br>
+groupReduce: accumulates all values of a key.
+
 ##### L39
 
 #### LABS
