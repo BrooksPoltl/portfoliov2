@@ -159,12 +159,6 @@ groupReduce: accumulates all values of a key.
 find most common word in song. Want to do with multi processing,
 find most common word for each starting letter. can use single processer to check the 26 results that the multiprocessed calculation gets.
 
-#### LABS
-
-##### LAB 6B
-
-(lab 6A is related to logo project).
-
 #### READING
 
 ##### 3.4
