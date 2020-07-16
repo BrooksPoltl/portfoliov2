@@ -180,3 +180,13 @@ serialization: Processes will execute concurrently, but some will collections wi
 Deadlock: 2 procedures stalled because they rely on eachother to finish the procedure.
 
 ##### 3.5
+
+Delayed evaluation: allows ability to represent a very large sequence as streams.
+<br>
+<br>
+If large amounts are represented by a list it can create huge problems with both time and space complexity.
+<br>
+<br>
+Delay: packages an expression into a procedure that it can call later.
+<br>
+Force: calls the procedure that delay creates
