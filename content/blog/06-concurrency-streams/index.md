@@ -163,4 +163,20 @@ find most common word for each starting letter. can use single processer to chec
 
 ##### 3.4
 
+Referential Transparency: The ability to replace a subexpression with the values.
+<br>
+<br>
+Several processes can attempt to access same state variable, this makes order matter, so you have to use sequential order.
+<br>
+<br>
+example of multiprocessing complications:
+2 processes of 3 ordered events. There are 20 possibilties of how these events can be executed. Programmers must think about all possibilties. This creates huge complications when thinking about an entire system.
+<br>
+<br>
+serialization: Processes will execute concurrently, but some will collections will be done sequentially. While the procedure is being executed it locks out other procedures from being able to access it.
+<br>
+<br>
+
+Deadlock: 2 procedures stalled because they rely on eachother to finish the procedure.
+
 ##### 3.5

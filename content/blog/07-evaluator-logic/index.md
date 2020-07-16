@@ -1,5 +1,5 @@
 ---
-title: "07: Concurrency and Streams"
+title: "07: Evaluator and Logic Programming"
 date: "2020-05-17T22:12:03.284Z"
 description: "Part 7 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
