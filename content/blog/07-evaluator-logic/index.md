@@ -31,6 +31,10 @@ declaritive programming or logic programming: not telling computer sequence of s
 
 ##### L43
 
+Unification: Variables on both sides (bindings), you can use unification to compute anything computable (Turing complete). Popular in database systems.
+<br>
+<br>
+
 ##### L44
 
 #### LABS
