@@ -1,6 +1,6 @@
 ---
 title: "07: Evaluator and Logic Programming"
-date: "2020-05-17T22:12:03.284Z"
+date: "2020-08-03T22:12:03.284Z"
 description: "Part 7 of CS61A Structure and Interpretation of Computer Programs"
 topic: "teachyourselfcs"
 subCat: "programming"
@@ -13,9 +13,21 @@ If you would like to start at the beginning start [here](https://bpp.dev/article
 
 ##### L40
 
+Sometimes normal order is prefferable, you can modify evaluator to use normal order.
+<br>
+<br>
+
 ##### L41
 
+Analyzing evaluator: variant on metacircular evaluator, basically a compiler for scheme into scheme (transpiler like typescript).
+<br>
+<br>
+
 ##### L42
+
+declaritive programming or logic programming: not telling computer sequence of steps. Gives a set of sentences in logical form, to form rules to determine an output.
+<br>
+<br>
 
 ##### L43
 
