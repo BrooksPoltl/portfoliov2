@@ -91,3 +91,8 @@ Nondeterministic computing: "generate and test"
 generating possibilites, and then filtering those possibilities to the desired result.
 
 ##### 4.4
+
+Most programming langauges are unidirectional (computation with well defined inputs and outputs).
+<br>
+<br>
+Unification: In order to handle rules in a query language you need a generalization of pattern matching since the rules contain variables.
