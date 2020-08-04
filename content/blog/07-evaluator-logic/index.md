@@ -37,14 +37,40 @@ Unification: Variables on both sides (bindings), you can use unification to comp
 
 ##### L44
 
-#### LABS
+Programming Paradigms:
+<br>
+functional
+<br>
+object oriented
+<br>
+client/server
+<br>
+declarative/logic
+
+<br>
+<br>
+
+Most programs use multiple paradigms, but are smart in how they implement each (not using concurrency for object oriented task).
+<br>
+<br>
+
+Some languages only functional or OOP, but better for it to be in your head that way you can write programs taking advantage of multiple paradigms.
+<br>
+<br>
+high level language: abstracts away the inner workings of the computer
+<br>
+low level language: exposes parts of the inner workings so you can manipulate the machine.
 
 #### READING
 
+##### 4.1.7
+
+Evaluator is inefficient, analyzes syntax multiple times in an expression, it can be made more efficient by creating a procedure that analyzes the syntax and returns a procedure that can be executed.
+
 ##### 4.2
+
+asdds
 
 ##### 4.3
 
 ##### 4.4
-
-##### 4.1.7
