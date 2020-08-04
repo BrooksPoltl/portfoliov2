@@ -85,4 +85,9 @@ Process of evaluating the expression in a thunk is called forcing.
 
 ##### 4.3
 
+Nondeterministic computing: "generate and test"
+<br>
+<br>
+generating possibilites, and then filtering those possibilities to the desired result.
+
 ##### 4.4
