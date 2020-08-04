@@ -69,7 +69,19 @@ Evaluator is inefficient, analyzes syntax multiple times in an expression, it ca
 
 ##### 4.2
 
-asdds
+applicative order: all arguments are evaluated when the procedure is applied.
+<br>
+<br>
+
+Normal order: all arguments are evaluated when needed (AKA lazy evaluation).
+<br>
+<br>
+
+These delayed arguments are not evaluated, they are turned into thunks (a procedure that returns a procedure), the thunk is then called whenever the argument is needed.
+<br>
+<br>
+
+Process of evaluating the expression in a thunk is called forcing.
 
 ##### 4.3
 
