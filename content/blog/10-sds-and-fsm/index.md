@@ -1,6 +1,6 @@
 ---
 title: "10: Synchronous Digital Systems and Functional Units"
-date: "2020-08-03T22:12:03.284Z"
+date: "2020-08-15T22:12:03.284Z"
 description: "Part 3 of CS61C Great Ideas in Computer Architecture"
 topic: "teachyourselfcs"
 subCat: "computer-architecture"

@@ -1,6 +1,6 @@
 ---
 title: "09: Assembly and MIPS"
-date: "2020-08-03T22:12:03.284Z"
+date: "2020-08-14T22:12:03.284Z"
 description: "Part 2 of CS61C Great Ideas in Computer Architecture"
 topic: "teachyourselfcs"
 subCat: "computer-architecture"
