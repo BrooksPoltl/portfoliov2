@@ -102,6 +102,52 @@ invert all bits and add 1
 
 ##### L2
 
+Compiled vs interpreted languages:
+<br>
+<br>
+High level language compiles down to Assembly language, Assembler transfers to machine language.
+
+C is lowest of high level langauge, also called universal assembler. Low level but not tied to machine.
+
+C compiles code into specific machine code x86 vs arm.
+
+.o extension is machine code object files.
+
+Cannot use machine code in different architecture, must re compile if you want to switch machines.
+
+Relying on architecture can create problems when porting to different architectures.
+
+C is function oriented, c++ more object oriented.
+
+unsigned means no negatives.
+<br>
+<br>
+short: at least 16 bits
+
+int: could be 16 but could be larger
+
+long: greated than 32
+
+all could be 64 bits
+<br>
+<br>
+define runs the same speed as const.
+<br>
+<br>
+functions have return type, if you dont need to return a type return void.
+
+can create struct type that acts like a object.
+<br>
+<br>
+pointer variable containing an address, aka a memory location
+<br>
+<br>
+& is address operator.
+
+\*x is value at address x.
+
+\* called the dereference operator
+
 ##### L3
 
 ##### L4
