@@ -150,6 +150,28 @@ pointer variable containing an address, aka a memory location
 
 ##### L3
 
+Address is a value, uses unsigned numbers.
+
+<br>
+
+int \*x, means variable x is address of an integer.
+
+x = &y, assign the address of y to x.
+
+dereference operator gets the value of a pointer.
+
+<br>
+
+to change value of variable you pass a pointer to a function and increment the pointers value.
+
+<br>
+
+void \* generic pointer to anything. Can lead to bugs and security issues.
+
+string is a array of characters or chars
+
+to increment a pointer for an array you pass a pointer to a pointer. that way you arent operating on the copy.
+
 ##### L4
 
 #### LABS
