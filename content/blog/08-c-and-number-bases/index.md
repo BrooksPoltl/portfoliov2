@@ -174,6 +174,56 @@ to increment a pointer for an array you pass a pointer to a pointer. that way yo
 
 ##### L4
 
+in C arrays just point to first value in array.
+
+<br>
+
+You cant add 2 pointers, multipy or subtract pointer from integer.
+
+<br>
+
+4 regions of address space.
+<br>
+stack
+<br>
+heap
+<br>
+static data
+<br>
+code
+
+<br>
+<br>
+
+stack- local variables inside functions. (grows downward)
+
+heap - space requested for dynamic data, handled with malloc() resizes dynamically. (grows upward)
+
+static data - variables outside of functions (loaded when program starts)
+
+code - loaded when program starts
+<br>
+
+stack is last in first out.
+
+<br>
+
+heap uses 5 builtin functions
+
+- malloc, allocate block of uninitialized memory
+- calloc, allocate block of zeroed memory
+- free, free previously allocated block of memory
+- cfree, dont use (legacy)
+- realloc, change size of previously allocated block
+
+<br>
+
+size_t is the size of the bytes in machine.
+
+calling malloc multiple times in a row doesnt mean they will be continuous in memory.
+
+free releases the memory you allocated.
+
 #### LABS
 
 ##### LAB 0
