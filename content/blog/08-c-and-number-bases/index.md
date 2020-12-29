@@ -224,13 +224,9 @@ calling malloc multiple times in a row doesnt mean they will be continuous in me
 
 free releases the memory you allocated.
 
-#### LABS
-
-##### LAB 0
-
-##### LAB 1
-
 #### HW 0
+
+https://github.com/BrooksPoltl/cs61c/blob/master/hw0/hw0.txt
 
 #### READINGS
 
