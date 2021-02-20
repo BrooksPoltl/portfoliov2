@@ -9,9 +9,9 @@ subCat: "programming"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### LECTURES
+## LECTURES
 
-##### L30
+### L30
 
 Client/Server programming
 <br>
@@ -43,7 +43,7 @@ three way handshake: client sends to server, server sends to client, client send
 <br>
 <br>
 
-##### L31
+### L31
 
 Your processer has memory inside of it to do computations with data very fast (ram). If second load called before first store happens you can get a concurrency issue.
 <br>
@@ -70,7 +70,7 @@ Deadlock: 2 threads locked waiting for eachother to finish
 
 unfairness: process A wins and process B can't win.
 
-##### L32
+### L32
 
 Correct answer. Consistent within sequential order of the evaluated threads.
 Same answer as no parallelism.
@@ -94,11 +94,11 @@ Resource starvation: several threads want resource. One thread keeps getting the
 <br>
 mutex: object that attempts to aquire and release
 
-##### L33
+### L33
 
 Duplicate video
 
-##### L34
+### L34
 
 memoization: remembering result of expression and using that to build the next expression.
 <br>
@@ -112,7 +112,7 @@ Only use streams if program is functional.
 <br>
 Parts of the interpreter and computer are non-functional, but they provide a layer of abstraction at the program level that allows for safe multiprocessing if you write a functional program.
 
-##### L35
+### L35
 
 Therac-25
 <br>
@@ -147,21 +147,21 @@ Initially people thought it was operator error since the machines most of the ti
 
 They found error and fixed it, but just because you found a real error doesn't mean more errors can't be within the program. They shipped the bugfix without extensive testing to make sure the issue is really resolved.
 
-##### L38
+### L38
 
 mapReduce is really mapSortReduce, sorts one value then reduces it.
 <br>
 <br>
 groupReduce: accumulates all values of a key.
 
-##### L39
+### L39
 
 find most common word in song. Want to do with multi processing,
 find most common word for each starting letter. can use single processer to check the 26 results that the multiprocessed calculation gets.
 
-#### READING
+## READING
 
-##### 3.4
+### 3.4
 
 Referential Transparency: The ability to replace a subexpression with the values.
 <br>

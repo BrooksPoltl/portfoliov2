@@ -1,59 +1,74 @@
 html {
-  font-family: 'Roboto', sans-serif;
-  background-color:#212529;
+  font-family: "Roboto", sans-serif;
+  background-color: #212529;
 }
 body {
-    line-height: 1.5;;
+  line-height: 1.5;
 }
 a {
-    color:#dee2e6;
-    transition: all .2s ease-in-out;
-    text-decoration: none !important;
+  color: #dee2e6;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none !important;
 }
 li {
-    color: #6c757d;
+  color: #6c757d;
 }
-p { 
-    color:#6c757d;
-    font-size: 16px;
+p {
+  color: #6c757d;
+  font-size: 16px;
 }
 footer {
-    color: #dee2e6;
+  color: #dee2e6;
 }
 h1 {
-    color: #dee2e6;
-    font-size: 36px;
+  color: #dee2e6;
+  font-size: 36px;
 }
 h2 {
-    color: #dee2e6;
-    font-size: 32px;
-    margin-bottom: 5px;
+  color: #dee2e6;
+  font-size: 32px;
+  margin-bottom: 5px;
 }
 h3 {
-    color: #dee2e6;
-    font-size: 28px;
-    margin: 20px;
+  color: #dee2e6;
+  font-size: 28px;
+  margin: 20px;
 }
 h4 {
-    color: #dee2e6;
-    font-size: 24px;
-    margin: 20px;
+  color: #dee2e6;
+  font-size: 24px;
+  margin: 20px;
 }
 h5 {
-    color: #dee2e6;
-    font-size: 20px;
-    margin: 20px;
+  color: #dee2e6;
+  font-size: 20px;
+  margin: 20px;
 }
 h6 {
-    color: #dee2e6;
-    font-size: 16px;
-    margin: 20px;
+  color: #dee2e6;
+  font-size: 16px;
+  margin: 20px;
 }
 
 small {
-    color:#dee2e6;
+  color: #dee2e6;
 }
 a:hover {
-    color: #ffffff;
-    cursor: pointer;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+code {
+  color: #abb2bf !important;
+  background-color: #282c34 !important;
+  text-shadow: none !important;
+}
+
+pre {
+  background-color: #282c34 !important;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 0px 0px 20px 40px;
 }

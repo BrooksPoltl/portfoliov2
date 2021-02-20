@@ -9,33 +9,33 @@ subCat: "programming"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### LECTURES
+## LECTURES
 
-##### L40
+### L40
 
 Sometimes normal order is prefferable, you can modify evaluator to use normal order.
 <br>
 <br>
 
-##### L41
+### L41
 
 Analyzing evaluator: variant on metacircular evaluator, basically a compiler for scheme into scheme (transpiler like typescript).
 <br>
 <br>
 
-##### L42
+### L42
 
 declaritive programming or logic programming: not telling computer sequence of steps. Gives a set of sentences in logical form, to form rules to determine an output.
 <br>
 <br>
 
-##### L43
+### L43
 
 Unification: Variables on both sides (bindings), you can use unification to compute anything computable (Turing complete). Popular in database systems.
 <br>
 <br>
 
-##### L44
+### L44
 
 Programming Paradigms:
 <br>
@@ -61,13 +61,13 @@ high level language: abstracts away the inner workings of the computer
 <br>
 low level language: exposes parts of the inner workings so you can manipulate the machine.
 
-#### READING
+## READING
 
-##### 4.1.7
+### 4.1.7
 
 Evaluator is inefficient, analyzes syntax multiple times in an expression, it can be made more efficient by creating a procedure that analyzes the syntax and returns a procedure that can be executed.
 
-##### 4.2
+### 4.2
 
 applicative order: all arguments are evaluated when the procedure is applied.
 <br>
@@ -83,14 +83,14 @@ These delayed arguments are not evaluated, they are turned into thunks (a proced
 
 Process of evaluating the expression in a thunk is called forcing.
 
-##### 4.3
+### 4.3
 
 Nondeterministic computing: "generate and test"
 <br>
 <br>
 generating possibilites, and then filtering those possibilities to the desired result.
 
-##### 4.4
+### 4.4
 
 Most programming langauges are unidirectional (computation with well defined inputs and outputs).
 <br>

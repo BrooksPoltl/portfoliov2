@@ -9,9 +9,9 @@ subCat: "computer-architecture"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### LECTURES
+## LECTURES
 
-##### L1
+### L1
 
 Course concentrates on broad ideas in computer architecture. C is close to underlying hardware.
 
@@ -67,15 +67,12 @@ Coping with failures, You have to maintain backups for data stores that way you 
 <br>
 bit terminology:
 <br>
-8-bit: byte
-<br>
-16-bit: half-words
-<br>
-32-bit: words
-<br>
-64-bit: double words
-<br>
-<br>
+
+- 8-bit: byte
+- 16-bit: half-words
+- 32-bit: words
+- 64-bit: double words
+
 Integer and floating-point operations can load to results too big within their representation (overflow/underflow).
 <br>
 <br>
@@ -100,7 +97,7 @@ go from positive to negative
 <br>
 invert all bits and add 1
 
-##### L2
+### L2
 
 Compiled vs interpreted languages:
 <br>
@@ -148,7 +145,7 @@ pointer variable containing an address, aka a memory location
 
 \* called the dereference operator
 
-##### L3
+### L3
 
 Address is a value, uses unsigned numbers.
 
@@ -172,7 +169,7 @@ string is a array of characters or chars
 
 to increment a pointer for an array you pass a pointer to a pointer. that way you arent operating on the copy.
 
-##### L4
+### L4
 
 in C arrays just point to first value in array.
 
@@ -224,10 +221,12 @@ calling malloc multiple times in a row doesnt mean they will be continuous in me
 
 free releases the memory you allocated.
 
+## LABS
+
 #### HW 0
 
 https://github.com/BrooksPoltl/cs61c/blob/master/hw0/hw0.txt
 
-#### READINGS
+## READINGS
 
-##### 2.4
+### 2.4
