@@ -195,6 +195,265 @@ jump (j)
 
 ### L6
 
+Machine code is lowest level of software.
+
+words and vocabulary are called instructions and instruction sets respectively
+
+mips is example RISC instruction set
+
+rigid format 1 operation, 2 operands, 1 destination
+
+example operations:
+
+- add
+- sub
+- mul
+- div
+- and
+- or
+- sll
+- srl
+- sra
+
+operations to move data around registers and memory:
+
+- lw
+- sw
+- lb
+- sb
+
+operations for decision/ flow control:
+
+- beq
+- bne
+- j
+- slt
+- slti
+
+program is stored as a bunch of bytes
+
+mips instruction 32 bits or 4 bytes
+
+Assembler converts assembly to machine code.
+
+assembly code has .S extension machine code object has .o extension
+
+machine code executable file has a .out extension
+
+<br>
+
+if a branch is false you go to next instruction else you jump to the given instruction (conditional branch).
+
+unconditional branch: Always go to the "label"
+
+<br>
+
+C code
+
+```
+  if (i == j)
+    f = g + h;
+```
+
+mips code
+
+```
+  bne $s3, $s4, Exit # notice this is not equal, if false this goes to next line which is add
+  add $s0, $s1, $s2
+```
+
+<br>
+
+C code
+
+```
+if (i == j)
+  f = g + h;
+else
+  f = g - h;
+```
+
+mips code
+
+```
+  bne $s3, $s4, Else
+  add $s0, $s1, $s2
+  j Exit
+  Else: sub $s0, $s1, $s2
+  Exit:
+```
+
+<br>
+
+The jump is needed to jump over the else code, and go to whatever the next line of code is.
+
+interpreted: compiled at run time, so as a line of code is being executed it compiles to assembly.
+
+<br>
+
+C code
+
+```
+  if (g < h)
+    goto Less;
+```
+
+mips code
+
+```
+  slt $t0, $s0, $s1
+  bne $t0, $zero, Less
+```
+
+<br>
+
+slt = set on less than
+
+set means change to 1.
+
+reset means change to 0.
+
+sltu = treats registers as unsigned
+
+slti = immediates
+
+<br>
+
+Six Fundamental Steps in Calling a Function:
+
+1. Put parameters in a place where function can access them
+2. Transfer control to function
+3. Acquire (local) storage resources needed for function
+4. Perform desired task of the function
+5. Put result value in a place where calling code can access it and restore any registers you used
+6. Return control to point of origin since a function can be called from several points in a program.
+
+Function call conventions
+
+- Registers faster than memory, so use them
+- $a0 - $a3: four argument registers to pass parameters
+- $v0-$v1: two value registers to return values
+- \$ra: one return address register to return to the point of origin
+
+C code
+
+```
+  int sum (int x, int y) {
+    return x + y;
+  }
+```
+
+mips code
+
+```
+  address (shown in decimal)
+  1000 add $a0, $s0, $zero          # x = a
+  1004 add $a1, $s1, $zero          # y = b
+  1008 addi $ra, $zero, 1016        # $ra = 1016
+  1012 j sum                        # jump to sum
+  2000 sum: add $v0, $a0, $a1
+  2004 jr $ra #new instruction
+```
+
+jal = jump and link
+
+laj = link and jump
+
+link = form an address or link that points to calling site to allow function to return to
+proper address.
+
+jr = jump register
+
+\$sp = stack pointer
+
+Where are old register values saved to restore them after function call?
+
+ideally they are in the stack.
+
+<br>
+
+push: placing data onto stack
+
+pop: removing data from stack
+
+stack in memory so need register to point to it (\$sp register 29 in mips)
+
+when adding \$sp decrements to add more space
+
+when removing \$sp increases to decrease space.
+
+<br>
+
+C code
+
+```
+  int leaf_example (int g, int h, int i, int j)
+  {
+    int f;
+    f = (g + h) - (i + j);
+    return f;
+  }
+```
+
+paramerter variables g,h,i,j in $a0, $a1, $a2, $a3
+
+f in \$s0
+
+1 temp register \$t0
+
+<br>
+
+mips code
+
+```
+  addi $sp, $sp, -8      # adjust stack for 2 items
+  sw $t0, 4($sp)         # save $t0
+  sw $s0, 0($sp)         # save $s0
+
+  add $s0, $a0, $a1      # f = g + h
+  add $t0, $a2, $a3      # t0 = i + j
+  sub $v0, $s0, $t0      # return value (g+h)-(i+j)
+
+  lw $s0, 0($sp)         # restore register $s0 for caller
+  lw $t0, 4($sp)         # restore register $t0 for caller
+  addi $sp, $sp, 8       # adjust stack to delete 2 items
+  jr $ra                 #jump back to calling routine
+```
+
+<br>
+
+What if function calls another function?
+
+have to save the outer functions return address so the inner function can return there.
+
+<br>
+
+in C there are 3 import memory areas:
+
+- static
+- heap
+- stack
+
+<br>
+
+mips divides registers into 2 categories:
+
+1. Preserved across function call ($ra, $sp, $gp, $fp, "saved registers" $s0-$s7)
+2. Not preserved ($v0, $v1), argument registers $a0-$a3, temp $t0-$t9
+
+c has 2 storage classes:
+
+automatic: variables are local to function and discarded
+staic: variables exist across exits from and entries to procedures
+
+<br>
+
+use stack for automatic (local) variables that dont fit registers
+
+<br>
+
+procedure frame or activation record: segment of stack with saved registers and local variables.
+
 ### L7
 
 ### L8
