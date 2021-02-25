@@ -9,9 +9,9 @@ subCat: "programming"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### LECTURES
+## LECTURES
 
-##### L18
+### L18
 
 OOP is a implementation of lambda.
 <br>
@@ -35,7 +35,7 @@ Class variables
 
 Anytime you change the value of something use a exclamation point to signify you are not doing functional programming.
 
-##### L19
+### L19
 
 OOP implements inheritance through delegation (assigning to something else).
 <br>
@@ -51,7 +51,7 @@ initialize: method only used once to setup the class
 <br>
 dispatch procedure: takes message and returns a method.
 
-##### L20
+### L20
 
 OOP: With every object you have the procedures that work on it.
 <br>
@@ -65,7 +65,7 @@ Garbage collection: automatic storage management.
 
 <br>
 
-##### L21
+### L21
 
 global variables: available to anyone
 <br>
@@ -107,7 +107,7 @@ make an env with params bound to args
 Eval body in new env.
 <br>
 
-##### L22
+### L22
 
 Environemnt:
 <br>
@@ -139,18 +139,18 @@ Lexical scoping: extends lambda environment
 dynamic scope: extends specific environments.
 <br>
 
-##### L23
+### L23
 
 Professor out, more review on environments.
 <br>
 
-#### LABS
+## LABS
 
-##### 4A
+### 4A
 
 4A doesn't have code problems.
 
-##### 4B
+### 4B
 
 ```
 (define (make-account init-amount)
@@ -170,9 +170,9 @@ Professor out, more review on environments.
         dispatch))
 ```
 
-#### READINGS
+## READINGS
 
-##### 3.1 Assignment and local state
+### 3.1 Assignment and local state
 
 Delayed evaluation: decoupling time from events during evaluation.
 <br>
@@ -200,7 +200,7 @@ Programming that makes extensive use of reassignment is considered "imperative p
 
 This opens up the program to bugs not able to be created in functional programming.
 
-##### 3.2 Evironment model of evaluation
+### 3.2 Evironment model of evaluation
 
 Environment: a place in which variables are stored.
 <br>

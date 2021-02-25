@@ -9,16 +9,16 @@ subCat: "programming"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### INTRO
+## INTRO
 
 I will be following the Summer 2010 [Calendar](http://inst.eecs.berkeley.edu/~cs61a/su10/index.html)
 so each week will consist of 4 lectures and 2 labs.
 
-#### LECTURES
+## LECTURES
 
-##### L01
+### L01
 
-###### Mathmatical Operations
+#### Mathmatical Operations
 
 Class starts by going over some sytax for Scheme. Most languages do simple operations the same way we learned in grade school (infix notation):
 <br>`2 + 2 + 3`<br>
@@ -33,7 +33,7 @@ When you first see this it looks way more complicated, but what is happening und
 Scheme takes the arguments and then computes the expressions of the arguments until it gets down to a primitive value.
 `(+ 2 2 3)` is a expression and not a primitive value, so it calls `(+ 2 2 3)`. The left argument of the `-` is now 7 and both arguments are primitive values, meaning it can calculate the `-` to get 3.
 
-###### Define
+#### Define
 
 `define` is an interesting keyword. It can be used to create functions:
 
@@ -61,7 +61,7 @@ Define can also be used to store constants:
 
 This is the same thing as above but used in a different way. Since 3.14159 is a primitive no expression needs to be evaluated for the second parameter.
 
-###### Conditionals
+#### Conditionals
 
 Here is the first example of a program we see in class:
 
@@ -88,9 +88,9 @@ The third parameter `if` takes in is the expression if the test case is false.
 <br>
 Also worth noting that names that return a boolean add a `?` to the end to show that the primitive returned is true or false. Like how equal is `equal?` in the code block above.
 
-##### L02
+### L02
 
-###### Recursion
+#### Recursion
 
 ```
 (define (pigl wd)
@@ -117,7 +117,7 @@ Lets say `pigl` gets called with `scheme`.
 The conditional checks `pl-done` which checks the first letter in the word to see if it is a vowel. Since `pl-done` is false because `s` isn't a vowel it calls `pigl` again with the argument `chemes`. This is because `word` takes the arguments `cheme` and `s` and adds them together. `pigl` gets called repeatedly until
 it is called with a vowel as the first letter. When the first letter is a vowel the expression `(word wd 'ay)` is ran and the result is a primitive which means the procedure stops.
 
-###### Abstraction
+#### Abstraction
 
 Big Picture:
 
@@ -142,11 +142,11 @@ quantum physics                 (lowest)
 
 Abstraction is the layering of pieces on top of eachother. Little pieces are put together to form a layer that can be referenced as a whole.
 
-###### Functional Programming
+#### Functional Programming
 
 With the introduction of multi-core processers, parallelism has helped functional programming make a comeback. If everything is a function you won't run into race conditions created by dependencies.
 
-###### Function vs. Procedure
+#### Function vs. Procedure
 
 Two functions are the same if they give the same output with given inputs.
 <br>
@@ -156,7 +156,7 @@ A procedure is a sequence of steps for computing a function.
 Therefore `2x + 6` and `2(x + 3)` are the same function but different procedures.
 <br>
 
-###### Cond
+#### Cond
 
 ```
 (define (buzz n)
@@ -185,7 +185,7 @@ Important to note:
 <br>
 If a `cond` does not have an `else` statement it will return `unspecified`, which can be different depending on interpreted, so always have an else statement.
 
-###### Applicative Order vs Normal Order
+#### Applicative Order vs Normal Order
 
 ```
 (def (f a b) (+ (g a) b))
@@ -243,9 +243,9 @@ normal
 
 Since the `(random 10)` is split into 2 different function alls in normal order you get different results.
 
-##### L03
+### L03
 
-###### Data vs Procedures
+#### Data vs Procedures
 
 Data is like a noun. Procedures are like verbs.
 <br>
@@ -254,7 +254,7 @@ Capitalization does not matter in scheme.
 Able to take in functions as arguments.
 `se` is the function for creating sentences.
 
-###### Lambda
+#### Lambda
 
 The thing that makes a function.
 A thing that creates and can call a function without having to be named.
@@ -263,12 +263,12 @@ A thing that creates and can call a function without having to be named.
 PRED: short for predicate, predicate is a function whose range is a boolean (true or false).
 Every procedure has a lambda hidden inside of it.
 
-##### L04
+### L04
 
 Using lambdas for control using procedures as data.
 Keep decides whether to keep data or not.
 
-##### first class datatype
+#### first class datatype
 
 Rule of Thumb:
 <br>
@@ -286,9 +286,9 @@ Bindings can't reference eachother during declaration because of applicative ord
 <br>
 Want to keep as many variables local as possible.
 
-#### LABS
+## LABS
 
-##### Lab 1A
+### Lab 1A
 
 The first problem for the lab was to modify the `plural` program to handle a word ending in y, but has a vowel in front of it (boy).
 
@@ -336,7 +336,7 @@ My Solution:
 <br>
 <br>
 
-##### Lab 1B
+#### Lab 1B
 
 Solution for #3 on lab:
 <br>
@@ -363,9 +363,9 @@ Note to self, don't copy and paste function calls to check if your code is right
 The replace function here takes in the current word and checks to see if the word should be replaced, then it returns what the word should be.
 Substitute is a recursive function that iterates the sentence and returns the sentence with the replacements.
 
-#### READINGS
+## READINGS
 
-##### 1.1 The Elements of Programming
+### 1.1 The Elements of Programming
 
 The section starts off saying that there are 3 mechanisms that languages utilize to simplify complex ideas:
 <br>
@@ -420,9 +420,9 @@ Lisp allows for block structure so you can nest a define in another define, and 
 Lisp also allows the sub define functions to have access to parameters in the parents scope. This is called lexical scoping.
 <br>
 
-##### 1.2 Procedures and the processes they generate
+### 1.2 Procedures and the processes they generate
 
-###### Linear Recursion vs linear interative
+### Linear Recursion vs linear interative
 
 Recursive calls itself, interative uses a helper iterator function to loop through the possibilities.
 <br>
@@ -433,7 +433,7 @@ Tail-recursive: an iterative process in constant space.
 Tree-recursive: think fibonacci where it uses recursion multiple times.
 Tree recursive procedures are easy to identify, but not very efficient. It is possible one day a "smart compiler" could find these procedures and make them efficient.
 
-##### 1.3 Formulating Abstractions with Higher Order Procedures
+### 1.3 Formulating Abstractions with Higher Order Procedures
 
 Sigma Notation: The sum of numbers between A and B.
 This can be abstracted to create a procedure that handles all needs for doing a procedure to calculate a sum.

@@ -9,13 +9,13 @@ subCat: "programming"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### LECTURES
+## LECTURES
 
-##### User Interface Lectures
+### User Interface Lectures
 
 These lectures are in week 3 of the Calendar, but lecture 5 and 6 for spring 2010 so I'll just list them here since order doesn't matter for them.
 
-##### L05
+### L05
 
 This lecture goes over "User interface design" a lecture by Alan Kay. Alan Kay is the inventor of every aspect of the modern computer environment.
 <br>
@@ -23,13 +23,13 @@ This lecture goes over "User interface design" a lecture by Alan Kay. Alan Kay i
 
 Dynabook was a computer that looks like a calculator.
 
-##### L06
+### L06
 
 This lecture goes over part 2 of "User interface design". This specific lecture goes over the psychology of UI.
 
-##### L07
+### L07
 
-###### Time Efficiency and Order of Growth
+#### Time Efficiency and Order of Growth
 
 Measure efficiency by how many constant time expressions are used.
 <br>
@@ -48,9 +48,9 @@ Constant factors not very valuable in runtime because of Moore's law. Also as `n
 <br>
 Highest power of `n` is the one that counts.
 
-##### L08
+### L08
 
-###### Recursion and Iteration
+#### Recursion and Iteration
 
 ```
 O(1) -------|
@@ -79,16 +79,16 @@ O(N \*\* 3):
 
 - matrix multiply
 
-###### space complexity
+#### space complexity
 
 Since a recursive process has to wait for the nested process to finish the space complexity is O(n) for a O(n) runtime procedure.
 <br>
 <br>
 Iterative process takes constant time complexity.
 
-##### L09
+### L09
 
-###### Data abstraction
+#### Data abstraction
 
 Abstract data type: doesn't exist in scheme, created by the programmer.
 <br>
@@ -111,9 +111,9 @@ list: creates a new list with arguments as items.
 <br>
 append: put together elements of lists.
 
-##### L10
+### L10
 
-###### Lisp Higher Order Functions:
+#### Lisp Higher Order Functions:
 
 Every: computes function on every word in sentence.
 <br>
@@ -123,7 +123,7 @@ accumulate: combines things in list/sentence and returns result.
 <br>
 map: applies function to each list in nested list, can return list of list still.
 
-##### L11
+### L11
 
 3 pieces to interpreter:
 <br>
@@ -153,7 +153,7 @@ function calls
 <br>
 special-forms
 
-##### L12
+### L12
 
 trees: hierarchical data structure
 <br>
@@ -172,7 +172,7 @@ branch node: node with children
 <br>
 deep list: only the leafs have data.
 
-##### L13
+### L13
 
 Two recursive calls (that run, if it is conditionally running one of two recursive calls it isn't) in a procedure shows that you are dealing with tree recursion.
 <br>
@@ -185,9 +185,9 @@ Depth first search: when traversing the tree it gets as deep as possible before 
 <br>
 parse tree: computes Datum, then left, then right.
 
-#### LABS
+## LABS
 
-##### Lab 2A
+### Lab 2A
 
 2.2
 <br>
@@ -268,7 +268,7 @@ perimeter = 2l + 2w
 <br>
 area = l\*w
 
-##### Lab 2B
+### Lab 2B
 
 2.27
 
@@ -288,9 +288,9 @@ area = l\*w
 
 This uses the function from reverse to do a deep reverse of list of list.
 
-#### READINGS
+## READINGS
 
-##### 2.1 Introduction to data abstraction
+### 2.1 Introduction to data abstraction
 
 Abstract data can have a set of procedures known as an interface. These commonly require selectors and constructors.
 <br>
@@ -308,7 +308,7 @@ example:
 
 <br>
 
-###### cons, car, cdr
+#### cons, car, cdr
 
 A cons cell is a pointer to two parts in memory.
 <br>
@@ -317,7 +317,7 @@ A car is a operation that extracts the first value of memory, cdr extracts the s
 <br>
 Data objects constructed from pairs are called list-structured data.
 
-##### 2.2 Hierarchical Data and the Closure Property
+### 2.2 Hierarchical Data and the Closure Property
 
 `(cons 1 2)` notation is known as box-and-pointer notation.
 <br>
@@ -327,6 +327,6 @@ Closure property of cons: The ability for cdr to point to another cell. This all
 <br>
 This section goes over a lot of list procedures and tree stuff that was covered in lecture.
 
-##### 2.3 Symbolic Data
+### 2.3 Symbolic Data
 
 In order to manipulate symbols we need to be able to represent data by their values instead of symbol. Lisp allows you to quote using `'`.

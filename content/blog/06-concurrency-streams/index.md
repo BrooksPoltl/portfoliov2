@@ -179,7 +179,7 @@ serialization: Processes will execute concurrently, but some will collections wi
 
 Deadlock: 2 procedures stalled because they rely on eachother to finish the procedure.
 
-##### 3.5
+### 3.5
 
 Delayed evaluation: allows ability to represent a very large sequence as streams.
 <br>

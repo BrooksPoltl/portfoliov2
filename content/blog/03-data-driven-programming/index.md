@@ -9,9 +9,9 @@ subCat: "programming"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### LECTURES
+## LECTURES
 
-##### L14
+### L14
 
 2 types of expressions:
 
@@ -63,7 +63,7 @@ Substitution works for functional programming, but not all paradigms.
 <br>
 <br>
 
-##### L15
+### L15
 
 Why use a scheme interpreter to build a new one?
 <br>
@@ -91,7 +91,7 @@ Read: takes the input and turns it into box pointer diagrams.
 Quote: takes cadr of the next expression.
 <br>
 
-##### L16
+### L16
 
 concepts:
 <br>
@@ -126,7 +126,7 @@ This is not functional because same expression returns different results.
 You can still use these in a functional way by assigning at the beginning and never reassigning.
 <br>
 
-##### L17
+### L17
 
 Horizontal slices through the table: messaging. The name of the interface knows all the function.
 
@@ -154,9 +154,9 @@ programmers: 1 operand = monadic, 2 operands = dyadic
 <br>
 <br>
 
-#### LAB
+## LAB
 
-##### lab 3
+### lab 3
 
 ```
 (define (count-change amount)
@@ -180,9 +180,9 @@ This modifies the procedure on page 40-41 for count-change.
 <br>
 This replaces the amount of coins with a sentence of coin amounts. I modified it to check for an empty array instead of 0, then when all possibilities of a denomination are checked I switch it to the remaining denominations using `cdr`. Then all I have to do to find the `first-denomination` is return `car` of the list.
 
-#### READINGS
+## READINGS
 
-##### 2.4 Multiple Representations for Abstract Data
+### 2.4 Multiple Representations for Abstract Data
 
 generic procedures: procedures that operate that may be represented in more than 1 way.
 <br>
@@ -197,7 +197,7 @@ get: looks up the entry and returns item
 <br>
 <br>
 
-##### 2.5 Systems with Generic Operations
+### 2.5 Systems with Generic Operations
 
 Coercion: Objects of one type may be viewed as being of another type.
 <br>

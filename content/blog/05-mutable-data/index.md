@@ -9,9 +9,9 @@ subCat: "programming"
 This article is a part of a series where I go through [teachyourselfcs](https://teachyourselfcs.com/).
 If you would like to start at the beginning start [here](https://bpp.dev/articles/teachyourselfcs/programming/00-getting-started/).
 
-#### LECTURES
+## LECTURES
 
-##### L24
+### L24
 
 If sharing storage mutating may affect data, if not sharing storage it won't.
 <br>
@@ -23,7 +23,7 @@ Can't mutate quoted list. Have to use cons or `list`.
 eq? is when it is the same location in memory.
 equal? is equality.
 
-##### L25
+### L25
 
 Table: association between keys and values
 <br>
@@ -50,7 +50,7 @@ memoization: storing previous calculations to build a result.
 
 If underlying calculation is not functional you can't use memoization.
 
-##### L26
+### L26
 
 vector (array): indexed list
 <br>
@@ -61,7 +61,7 @@ vector best if needing to access a certain element a lot, accessing a value is o
 
 if you need to build up a list element by element list are faster.
 
-##### L27
+### L27
 
 streams: returns the first element, and a promise to compute the rest later.
 
@@ -84,7 +84,7 @@ delay: constructor for promises.
 
 promise remembers what it is returning to.
 
-##### L28
+### L28
 
 Integers computes the next integer just in time for the next computation to be run.
 
@@ -109,7 +109,7 @@ Scheme uses normal order because it supports mutations.
 
 Haskell is a purely functional language that uses applicative order.
 
-##### L29
+### L29
 
 Your operating system can assign you a port number.
 
@@ -149,7 +149,7 @@ thunk: procedure with no arguments
 
 thread: way of having many things happen at once in one program.
 
-##### L36
+### L36
 
 Old systems: take in variable and computes function.
 
@@ -171,7 +171,7 @@ read translates what you type into box and pointer form.
 <br>
 <br>
 
-##### L37
+### L37
 
 This lecture went over the logo language.
 <br>
@@ -195,19 +195,19 @@ allows "semi-global" vars
 <br>
 better debugging environment
 
-#### LABS
+## LABS
 
-##### Lab 5A
+### Lab 5A
 
 5A mostly drawing diagrams.
 
-##### Lab 5B
+### Lab 5B
 
 Need access to Berkeley's login for the resources for 5B.
 
-#### READINGS
+## READINGS
 
-##### 3.3 Mutable Data
+### 3.3 Mutable Data
 
 data objects that have a setter defined are known as mutable data objects.
 <br>
@@ -221,7 +221,7 @@ You can use a lookup procedure to get values out of the table given a key.
 <br>
 <br>
 
-##### 4.1.1 - 4.1.6 Metalinguistic abstraction
+### 4.1.1 - 4.1.6 Metalinguistic abstraction
 
 Evaluator: A procedure that when applied to an expression can perform the action required for the expression.
 <br>

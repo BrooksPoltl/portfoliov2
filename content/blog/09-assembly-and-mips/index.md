@@ -438,7 +438,7 @@ in C there are 3 import memory areas:
 
 mips divides registers into 2 categories:
 
-1. Preserved across function call ($ra, $sp, $gp, $fp, "saved registers" $s0-$s7)
+1. Preserved across function call ($ra, $sp, $gp, $ , "saved registers" $s0-$s7)
 2. Not preserved ($v0, $v1), argument registers $a0-$a3, temp $t0-$t9
 
 c has 2 storage classes:
