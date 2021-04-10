@@ -456,7 +456,129 @@ procedure frame or activation record: segment of stack with saved registers and 
 
 ### L7
 
+C has 2 storage classes: automatic and static
+
+- Automatic: variables are local to function and discared when function exits
+- Static: vairables exist across exits from and entries to procedures
+
+use stack for automatic (local) variables taht dont fit in registers
+
+procedure frame or activation record: segment of stack with saved registers and local variables
+
+some mips compilers use a frame pointer (\$fp) to point to first word of frame.
+
+\$gp: global pointer points to start of static data.
+
+heap: dynamic data, grows and shrinks depending on when you allocate and free memory.
+
+<br>
+
+![mips registers](/mipsRegisters.png)
+
+<br>
+
+26 and 27 used by the operating system.
+
+register 1 is used by assembler.
+
+<br>
+
+stored-program computer
+
+- instructions are represented as bit patterns - can think of these as numbers
+- therfore, entire programs can be stored in memory to be read or written just like data.
+- can reprogram quickly (seconds), dont have to rewire computer (days)
+- know as the "von neumann" computers after widely distributed tech remort on EDVAC project
+
+<br>
+
+Everything addressed
+
+- since all instructions are stored in memory everything has a memory address: instructions, data words
+- c pointers are just memory addresses: they can point to anything in memory
+
+- one register keeps address of instruction being executed: "Program Counter" (PC)
+
 ### L8
+
+MARS - mips simulator, allows you to run mips code on x86 or other architecture machine.
+
+<br>
+
+#### Running a program (compiling, assembling, linking, loading)
+
+Interpreter: program that executes other programs.
+
+Language translation gives us another option.
+
+In general we interpret a high level language when efficiency is not critical and translate to a lower-level language to up performance.
+
+interpreter executes program in the source langauge
+
+translator converts a program from source language to an equivalent program in another langauge
+
+example of interpreted language: python, javascript
+
+Can be useful to interpret machine language for learning/debuging.
+
+Translated/compiled code almost always more efficient.
+
+![compilation steps](/compilationSteps.png)
+
+<br>
+
+compiler takes high level code and returns assembly
+
+assembler turns assembly code to object code
+
+<br>
+
+multiplication: 32 bit \* 32 bit = 64 bit value (in mips)
+
+`mult register1, register2`
+
+puts result in special result register
+
+puts upper half in hi, lower half in lo
+
+hi and lo are 2 registers separate from 32 general purpose registers.
+
+use mfhi register and mflo register to move from hi, lo
+
+C code
+
+```
+a = b * c
+```
+
+mips code
+
+```
+  mult $s2, $s3
+  mfhi $s0
+  mflo $s1
+```
+
+division:
+
+`div register1, register2`
+
+C code
+
+```
+  a = c / d;
+```
+
+mips code
+
+```
+  div $s2, $s3
+  mflo $s0
+  mfhi $s1
+```
+
+assembler goes through assembly code twice,
+first to get labels, second to setup code
 
 ## LABS
 
@@ -493,3 +615,7 @@ procedure frame or activation record: segment of stack with saved registers and 
 ### A.1-A.4
 
 ### A.6
+
+```
+
+```
