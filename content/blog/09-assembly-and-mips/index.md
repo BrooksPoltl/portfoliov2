@@ -724,9 +724,20 @@ in a load word instruction the rt meaning changes to the destination field.
 
 A shift moves all of the bits in a word to the left or right leaving 0 in its place. These are sll and srl in mips (shift left logical and shift right logical).
 
-### 2.7
+<br>
 
-### 2.8
+There is also AND, OR, NOT, and NOR.
+
+### 2.7 Instructions for Making Decisions
+
+beq and bne (branch equal and branch not equal) goes to a statement if something is true. These are conditional branches there are also unconditional branches like jump, which will jump to a certain statement no matter what.
+
+<br>
+
+Most programming languages have a case/switch statement.
+This requires a jump address table to jump to whichever instructions are true.
+
+### 2.8 Supporting Procedures in Computer Hardware
 
 ### 2.9
 
