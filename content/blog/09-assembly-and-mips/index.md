@@ -739,6 +739,19 @@ This requires a jump address table to jump to whichever instructions are true.
 
 ### 2.8 Supporting Procedures in Computer Hardware
 
+A procedure has 6 steps:
+
+- Put parameters in a place where the procedure can access them.
+- Transfer control to the procedure.
+- Acquire the storage resources needed for the procedure.
+- Perform the desired task.
+- Put the result value in a place where calling the program can access it.
+- Return control to the point of origin, since a procedure can be called from several points in a program.
+
+<br>
+
+Registers are fastest place to hold data. There are 4 argument registers a0-a3, 2 value registers to return v0-v1, and 1 return address (ra). For procedures there is a specific instruction jal (jump and link) this jumps to the address and saves it in the return address.
+
 ### 2.9
 
 ### 2.10
