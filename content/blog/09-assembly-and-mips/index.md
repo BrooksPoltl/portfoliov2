@@ -590,17 +590,139 @@ first to get labels, second to setup code
 
 ### HW 2
 
-### READINGS
+## READINGS
 
-#### 2.1
+### 2.1 Introduction
 
-### 2.2
+instruction sets are very similar to each other. Similar to SQL in that if you
+learn one instruction set it is very easy to pick up another.
 
-### 2.3
+<br>
 
-### 2.5
+computer designers are focused on writing instruction sets that are easy
+as well as cost and energy efficient.
 
-### 2.6
+<br>
+
+stored-program concept: many data types can be stored as a number.
+
+### 2.2 Operations of the Computer Hardware
+
+Every computer must be able to perform arithmetic. You can chain aritmetic operations
+for example since add is stored to a variable you can set that variable again with the
+sum of the previous operation plus the next value.
+
+<br>
+
+Design principle 1: simplicity favors regularity.
+
+Java compilation done later than C compilation (just in time compilation or JIT).
+s
+
+### 2.3 Operands of the Computer Hardware
+
+Operands are limited in instructions, they must be a part of the register which is 32 bits also known as a "word". There are 32 32 bit registers.
+
+<br>
+
+Design principle 2: smaller is faster.
+
+<br>
+
+The farther electronic symbols have to travel the longer it takes.
+
+<br>
+
+There is also a need to move data from registers to memory, these are called data transfer instructions. Memory is just a large sigle dimensional array with the
+address being the index.
+
+<br>
+
+Words must start at addresses that are multiples of 4.
+This is common and called an alignment restriction.
+
+<br>
+
+Many programs use more variables than there are registers so more frequently used variables are stored in registers and less frequent are stored in memory. This is called "spilling registers".
+
+### 2.5 Representing Instructions in the Computer
+
+Format for instructions in decimal:
+
+```
+add $t0, $s1, $s2
+#decimal
+0 | 17 | 18 | 8 | 0 | 32
+#binary
+000000 | 10001 | 10010 | 01000 | 00000 | 100000
+```
+
+the left and right indicate the instruction to perform.
+
+<br>
+
+Notice that the left and right are both 6 bits instead of 5. The sum of all of these bits
+is 32 to represent the size of a single word. Each one of these columns in a single row represents a "field". The second and third field represents the operands which are $s1 and $s2 respectively. The fourth represents the register that receives the output. The fifth is unused here which is why it is set to 0.
+
+<br>
+
+To distinguish from assembly the numeric representation of the instruction is called
+"machine language".
+
+<br>
+
+Hexadecimal is very easy to convert to binary. Since hexadecimal is base 16 and binary is base 2. You convert by grouping together 4 bits and converting it to its hexadecimal equivalent.
+
+```
+11100001 = E1
+1110 = E # first four
+0001 = 1 # last four
+```
+
+C and Java use 0xnnnn notation for hexadecimal.
+
+<br>
+
+Further breakdown of instructions:
+
+```
+# register format or r-type or r-format
+
+op | rs | rt | rd | shamt | funct
+
+# op: Basic operation of the instruction aka opcode.
+# rs: first register source operand
+# rt: second register source operand
+# rd: register destination operand
+# shamt: shift amount
+# funct: function or function code, selects the specific variant of the operation in the op field
+
+
+```
+
+Idealy we would like to keep all instructions the same size, but some require more than 32 bits given the above format
+like lw (load word) since it includes constants.
+
+<br>
+
+Design Principle 3: Good Design demands good compromises.
+
+<br>
+
+This issue with constants has led us to the next instruction format:
+
+```
+# immediate format or i-type or i-format
+# op, rs and rt remain the same size of bits.
+
+op | rs | rt | constant or address (16 bits)
+```
+
+in a load word instruction the rt meaning changes to the destination field.
+
+### 2.6 Logical Operators
+
+A shift moves all of the bits in a word to the left or right leaving 0 in its place. These are sll and srl in mips (shift left logical and shift right logical).
 
 ### 2.7
 
@@ -615,7 +737,3 @@ first to get labels, second to setup code
 ### A.1-A.4
 
 ### A.6
-
-```
-
-```

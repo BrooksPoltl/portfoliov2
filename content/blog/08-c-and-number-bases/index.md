@@ -221,12 +221,22 @@ calling malloc multiple times in a row doesnt mean they will be continuous in me
 
 free releases the memory you allocated.
 
-## LABS
-
 #### HW 0
 
 https://github.com/BrooksPoltl/cs61c/blob/master/hw0/hw0.txt
 
 ## READINGS
 
-### 2.4
+### 2.4 Signed and Unsigned Numbers
+
+Humans think in base 10 numbers.
+
+123 = 100 + 20 + 3
+
+computers think in base 2 since it represents high and low electronic signals.
+
+<br>
+
+Original computer offered base 10, but it was so inefficient it was changed to binary since the base 10 implementation was still reliant on the binary signals.
+
+Today every computer uses 2's complement for signed numbers. Most significant bit is what determines if a signed number is negative or not.

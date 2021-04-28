@@ -3,7 +3,7 @@ const topicConfig = {
         {
           name: 'Teach Yourself CS',
           link: '/articles/teachyourselfcs',
-          subCats: ["Programming", "Computer Architecture", "Algorithms and Data Structures", "Math for Computer Science", "Operating Sytems", "Databases", "Languages and Compilers", "Distributed Sytems"]
+          subCats: ["Programming", "Computer Architecture", "Algorithms and Data Structures", "Math for Computer Science", "Operating Systems", "Databases", "Languages and Compilers", "Distributed Systems"]
         },
         {
           name: 'Programming',
