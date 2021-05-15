@@ -588,6 +588,8 @@ first to get labels, second to setup code
 
 ### HW 1
 
+https://github.com/BrooksPoltl/cs61c/tree/master/hw1
+
 ### HW 2
 
 ## READINGS
