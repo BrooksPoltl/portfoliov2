@@ -580,17 +580,13 @@ mips code
 assembler goes through assembly code twice,
 first to get labels, second to setup code
 
-## LABS
-
-### LAB 2
-
-### LAB 3
-
 ### HW 1
 
 https://github.com/BrooksPoltl/cs61c/tree/master/hw1
 
 ### HW 2
+
+https://github.com/BrooksPoltl/cs61c/tree/master/hw2
 
 ## READINGS
 
