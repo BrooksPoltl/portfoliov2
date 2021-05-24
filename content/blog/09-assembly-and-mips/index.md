@@ -750,9 +750,25 @@ A procedure has 6 steps:
 
 Registers are fastest place to hold data. There are 4 argument registers a0-a3, 2 value registers to return v0-v1, and 1 return address (ra). For procedures there is a specific instruction jal (jump and link) this jumps to the address and saves it in the return address.
 
-### 2.9
+### 2.9 Communicating with People
 
-### 2.10
+Computers originally created for numbers, but when they were commercially viably there was a need to be able to process text. Computers today offer an 8 bit byte to represet characters with the American Standard Code for Information Interchange (ASCII) being the standard.
+
+<br>
+
+Characters are normally combined into strings.
+
+<br>
+
+There are 3 choices for string representation:
+
+- The first position is reserved to indicate length
+- An accompanying variable has the length
+- The last position of the string indicates the length
+
+Unicode is a unversal encoding of the alphabets of most human langauges. Unicode uses 16 bits.
+
+### 2.10 MIPS Addressing for 32-bit Immediates and Addresses
 
 ### 2.12
 
