@@ -768,10 +768,69 @@ There are 3 choices for string representation:
 
 Unicode is a unversal encoding of the alphabets of most human langauges. Unicode uses 16 bits.
 
-### 2.10 MIPS Addressing for 32-bit Immediates and Addresses
+### 2.12 Translating and Starting a Program
 
-### 2.12
+#### Compiler
 
-### A.1-A.4
+The compiler transforms the C program into an assembly language program. Compiling is good because it allows the programmer to write programs in less lines of code. This also makes it easier to understand for humans.
 
-### A.6
+<br>
+
+Compilers use to be inefficient so some low level stuff was writter in assembly, but now compilers can output optimized code nearly as well as assembly experts.
+
+<br>
+
+#### Assembler
+
+Assembler takes assembly code and turns it into machine code. The assembler outputs an object file that consist of language instructions, data, and information needed to place instructions properly into memory.
+
+<br>
+
+To produce binary, the assembler must determine the address corresponding to the labels, assemblers do this by using a symbol table. Which is an object containing a key value pair of addresses and symbols.
+
+<br>
+
+Object file usually contains 6 things:
+
+- object file header giving the size and position of stuff
+- the text segment contains the machine language code
+- the static data segment contains data allocated to life of program.
+- relocation information identifies instructions and data words that depend on absolute addresses
+- symbol table containing previously mentioned key value store
+- debugging information contains information regarding compilation
+
+#### Linker
+
+Linkers allow you to not have to recompile everything when a line changes within the application.
+Also known as a link editor. It contains things at a procedure level so it only has to recompile the procedures that are changed.
+<br>
+
+Steps for linking:
+
+- Place code and data modules symbolically in memory.
+- Determine the addresses of data and instruction labels.
+- Patch both the internal and external references.
+
+The linker produces an executable file that can be run on the computer.
+
+#### Loader
+
+Loader in UNIX follows these steps:
+
+- Reads the executable file header to determine size of the text and data segments
+- Creates an address space large enough for the text and data
+- Copies the instructions and data from the executable file into memory
+- Copies the parameters (if any) to the main program onto the stack
+- Initializes the machine registers and sets the stack pointer to the first free location.
+
+#### Dynamically Linked Libraries
+
+Library routines are not linked and loaded until the program is run. In initial implementations the loader ran a dynamic linker for libraries. Using the file to find library references.
+
+#### Java Virtual Machine
+
+Java code is compiled down to java bytecode instruction set. This byte code is used by the interpreter called the Java Virtual Machine (JVM). An interpreter is a program that simulates an instruction set architecture.
+
+<br>
+
+The downside with interpreters is the hits to performance. To combat this Java development allowed for compilers to translate while the program was running. This is known as "Just in Time compilers" (JIT).
