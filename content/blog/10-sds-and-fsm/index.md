@@ -91,6 +91,18 @@ so the operation can be done without things changing out from under it.
 
 ### L10
 
+Clock tells you when to move to next step.
+
+Takes time when the clock ends its wave for the output to be represented (q delay).
+
+max delay = CLK to Q Delay + CL Delay + Setup Time
+
+Critical Path: the bottleneck of the delay. Designers look for these bottlenecks to improve them.
+
+You can add a register to be able to do parrallelism, but have to be wary about the overhead of adding registers.
+
+ALU: where the logic operations are executed.
+
 ### L11
 
 ## HW
