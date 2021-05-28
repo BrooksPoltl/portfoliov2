@@ -1,6 +1,6 @@
 ---
 title: "08: C and Number Bases"
-date: "2020-08-13T22:12:03.284Z"
+date: "2021-04-21T22:12:03.284Z"
 description: "Part 1 of CS61C Great Ideas in Computer Architecture"
 topic: "teachyourselfcs"
 subCat: "computer-architecture"

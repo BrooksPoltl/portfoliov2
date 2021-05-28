@@ -10,8 +10,8 @@ const config = {
         link: '/articles/',
       },
       {
-        name: 'Contact',
-        link: '/contact/',
+        name: 'Resume',
+        link: '/resume/',
       },
     ],
   }

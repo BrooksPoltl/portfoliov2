@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-about-js": () => import("./../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-articles-js": () => import("./../src/pages/articles.js" /* webpackChunkName: "component---src-pages-articles-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-resume-js": () => import("./../src/pages/resume.js" /* webpackChunkName: "component---src-pages-resume-js" */),
   "component---src-templates-blog-post-js": () => import("./../src/templates/blog-post.js" /* webpackChunkName: "component---src-templates-blog-post-js" */)
 }
 

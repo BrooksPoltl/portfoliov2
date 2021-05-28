@@ -13,6 +13,7 @@ exports.components = {
   "component---src-pages-about-js": hot(preferDefault(require("/Users/brookspoltl/Documents/coding/portfoliov2/src/pages/about.js"))),
   "component---src-pages-articles-js": hot(preferDefault(require("/Users/brookspoltl/Documents/coding/portfoliov2/src/pages/articles.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/brookspoltl/Documents/coding/portfoliov2/src/pages/index.js"))),
+  "component---src-pages-resume-js": hot(preferDefault(require("/Users/brookspoltl/Documents/coding/portfoliov2/src/pages/resume.js"))),
   "component---src-templates-blog-post-js": hot(preferDefault(require("/Users/brookspoltl/Documents/coding/portfoliov2/src/templates/blog-post.js")))
 }
 

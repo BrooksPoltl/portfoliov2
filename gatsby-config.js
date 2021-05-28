@@ -68,6 +68,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `content/assets/usb.svg`,
+        resume: `content/assets/brooks_poltl_resume_dev.pdf`
       },
     },
     `gatsby-plugin-react-helmet`,
