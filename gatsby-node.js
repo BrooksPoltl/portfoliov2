@@ -71,15 +71,26 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       })
     } else {
-      createPage({
-        path: `articles/${topic}${post.node.fields.slug}`,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      })
+      if (topic ==='me') {
+        createPage({
+          path: `me`,
+          component: blogPost,
+          context: {
+            slug: post.node.fields.slug,
+          },
+        })
+      } else {
+        createPage({
+          path: `articles/${topic}${post.node.fields.slug}`,
+          component: blogPost,
+          context: {
+            slug: post.node.fields.slug,
+            previous,
+            next,
+          },
+        })
+      }
+
     }
     
     if (!topicBuilder[topic]) {

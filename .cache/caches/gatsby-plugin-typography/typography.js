@@ -1,1 +1,0 @@
-module.exports = require("/Users/brookspoltl/Documents/coding/portfoliov2/src/utils/typography")

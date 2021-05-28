@@ -13,7 +13,7 @@ const BlogIndex = ({ data}) => {
     <Layout>
       <SEO title="All posts" />
       <Bio />
-      {posts.map(({ node }) => {
+      {posts.filter(({ node }) => node.frontmatter.topic !== 'me').map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
