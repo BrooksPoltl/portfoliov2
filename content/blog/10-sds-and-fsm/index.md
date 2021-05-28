@@ -59,7 +59,35 @@ CMOS transistors act as voltage controlled switches.
 
 Modern microprocessors have several billion transistors.
 
-46:41
+2 bit Adder needs 3 bits for overflow.
+
+#### Boolean Algebra
+
+Use plus "+" for OR
+
+- "logical sum"
+
+Use product for AND (a \* b or ab)
+
+- "logical product"
+
+"Hat" means complement (NOT)
+
+#### Type of Circuits
+
+Combinational Logic circuits:
+
+- Output is a fucntion of the inputs
+- E.g. ALUs
+
+Sequential Logic:
+
+- Circuits that "remember" or store information
+- aka "State Elements"
+- E.g. memories and registers
+
+sequential logic uses the clock which basically snap shots the state
+so the operation can be done without things changing out from under it.
 
 ### L10
 

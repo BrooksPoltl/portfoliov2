@@ -15,11 +15,6 @@ const Layout = ({ children }) => {
     >
       <Header menuLinks={config.menuLinks} />
       <main id = "main-content">{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
     </div>
   )
 }
