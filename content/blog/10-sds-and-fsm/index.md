@@ -105,6 +105,42 @@ ALU: where the logic operations are executed.
 
 ### L11
 
+Adder Truth table:
+
+| ai  | bi  | ci  | si  | ci + 1 |
+| --- | --- | --- | --- | ------ |
+| 0   | 0   | 0   | 1   | 0      |
+| 0   | 0   | 1   | 1   | 0      |
+| 0   | 1   | 0   | 1   | 0      |
+| 0   | 1   | 1   | 0   | 1      |
+| 1   | 0   | 0   | 1   | 0      |
+| 1   | 0   | 1   | 0   | 1      |
+| 1   | 1   | 0   | 0   | 1      |
+| 1   | 1   | 1   | 1   | 1      |
+
+Have to account for a carry from the previous result so you can properly calculate the current sum.
+<br>
+
+Five Stages of Instruction Execution:
+
+1. Instruction Fetch
+2. Instruction Decode
+3. ALU
+4. Memory Access
+5. Register Write
+
+Processor Design: 5 steps
+
+step 1: Analyze instruction set to determine datapath requirements.
+
+step 2: Select set of datapath components & establish clock methodology.
+
+step 3: Assemble datapath components that meet the requirements.
+
+step 4: Analyze implementation of each instruction to determine setting of control points that realizes the register transfer.
+
+step 5: Assemble the control logic.
+
 ## HW
 
 ### HW 3
