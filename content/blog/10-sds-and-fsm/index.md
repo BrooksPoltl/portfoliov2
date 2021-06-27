@@ -141,10 +141,14 @@ step 4: Analyze implementation of each instruction to determine setting of contr
 
 step 5: Assemble the control logic.
 
-## HW
-
-### HW 3
-
 ### Project 1
 
 ## READINGS
+
+### 4.1
+
+### 4.2
+
+### 4.3
+
+### 4.4

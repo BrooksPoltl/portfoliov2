@@ -58,20 +58,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             padding: 0,
           }}
         >
-          <li>
-            {previous && (
-              <Link to={`articles/${previous.frontmatter.topic}/${previous.frontmatter.subCat}${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`articles/${next.frontmatter.topic}/${next.frontmatter.subCat}${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
         </ul>
       </nav>
     </Layout>
