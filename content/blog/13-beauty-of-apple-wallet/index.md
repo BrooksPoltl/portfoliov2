@@ -1,5 +1,5 @@
 ---
-title: "14: The Beauty of Apple Wallet"
+title: "The Beauty of Apple Wallet"
 date: "2021-06-27T22:12:03.284Z"
 description: "The future I think Apple is trying to create"
 topic: "random"

@@ -1,5 +1,5 @@
 ---
-title: "11: Functional vs. Object Oriented Programming"
+title: "Functional vs. Object Oriented Programming"
 date: "2021-05-21T22:12:03.284Z"
 description: "This is an intro on functional and Object Oriented programming paradigms."
 topic: "programming"
