@@ -3,10 +3,10 @@ module.exports = {
     title: `Brooks Poltl`,
     author: {
       name: `Brooks Poltl`,
-      summary: `Full stack Software Engineer in St. Louis, MO`,
+      summary: `Software Engineer in Austin, Texas`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `My personal site`,
+    siteUrl: `https://bpp.dev`,
     social: {
       twitter: `brookscodes`,
     },
