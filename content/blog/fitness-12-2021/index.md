@@ -12,15 +12,15 @@ topic: "random"
 
 ## 12-8-2021
 
-running/walking miles:
+running/walking miles: 1.8 miles
 
 <br>
 
-calories burned via apple watch:
+calories burned via apple watch: 335
 
 <br>
 
-weight:
+weight: 231.0
 
 <br>
 
