@@ -169,3 +169,22 @@ notes (optional):
 <br>
 
 <br>
+## 12-16-2021
+
+running/walking miles: 1.6
+
+<br>
+
+calories burned via apple watch: 290
+
+<br>
+
+weight: 229.2
+
+<br>
+
+notes (optional):
+
+<br>
+
+<br>
