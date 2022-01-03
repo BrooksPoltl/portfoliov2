@@ -141,6 +141,10 @@ step 4: Analyze implementation of each instruction to determine setting of contr
 
 step 5: Assemble the control logic.
 
+<br>
+
+note: I took a long break 8+ months, I was going to revisit this, but the reason I took such a long break was not feeling the usefulness to my current career in diving deep on computer architecture. Nand2Tetris was a good enough intro into understanding hardware so I'm going to circle back on this after working toward distributed systems which is what I'm really interested in learning.
+
 ### Project 1
 
 ## READINGS
