@@ -81,7 +81,7 @@ Datagrams can get lost can be delivered out of order and can be corrupted.
 
 If you need to ensure that the packets get there correctly and safely you need the transport layer.
 
-TCP - Transmission Control Protocol. TCP will retransmit lost packets if necessary and ensures they are in correct order.
+TCP - Tranport Control Protocol. TCP will retransmit lost packets if necessary and ensures they are in correct order.
 
 TCP is really good for web and email clients.
 
@@ -111,3 +111,89 @@ transport has TCP UDP RTP, but network layer only has 1 IP, making it easy to in
 Most important thing is to remember numbers from 7 layer since still used to describe the layer.
 
 Ethernet layer 2, application layer 7.
+
+## L3
+
+ip datagrams = ip header + ip data
+
+internet protocol (network layer) sends ip data to the link layer.
+
+IP Service Model:
+
+- datagram (individually routed packets hop by hop)
+- unreliable (packets might get dropped)
+- best effort
+- connectionless (sequence is not gauranteed)
+
+header contains SA (source address) and DA (destination address)
+
+This service model was built to keep low assumptions and to let the applications decicde what features matter to them.
+
+### IP Service Model Details:
+
+#### tries to prevent packets from looping forever
+
+has a hop header and a TTL (time to live) to prevent infinite looping.
+
+#### Fragments packets that are too long
+
+Some links can only carry small packets so IP service breaks big packets into smaller ones.
+
+#### uses a header checksum to reduce chances of delivering datagram to wrong destination
+
+can cause security problems if packets keep showing up in the wrong place.
+
+#### Allows for new versions of IP
+
+- currently IPv4 with 32 bit addresses
+- and IPv6 with 128 bit addresses
+
+#### Allows for new options to be added to header
+
+can add features to header that werent in original spec.
+
+<br>
+
+IPv4 Datagram:
+
+- destination IP Address
+- source IP Address
+- Protocol ID (what type of protocol is inside the data field)
+- version (IPv4 and IPv6)
+- Total Packet Length (64kb max)
+- TTL (time to live prevents infinite loops, router decrements field and if it reaches 0 destroys the packet)
+- Packet ID
+- Flags
+- Fragment Offset (to be covered later)
+- Type of Service (how important the packet is)
+- Header length (optional fields for extra information)
+- Checksum (just in case header is corrupted)
+
+## L4
+
+application: stream of data
+
+transport: segments the data
+
+network: packets of data
+
+TCP handles almost all trafic, has client and server.
+
+Server listens for connection request. Client issues connection request and server responds.
+
+3-way handshake:
+
+1. client sends synchronize message "syn"
+2. server responds synchronize and acknowledge "synack"
+3. client acknowledges "ack"
+
+IP Address = network layer address
+TCP port = transport layer address
+
+in wifi connection first hop to router is the WAP (wireless access point). then goes through routers wired together.
+
+A router can have multiple links. Forwarding table has patterns and decides which link matches packet.
+
+cool demo of 3 way handshake at 5:24
+
+https://www.youtube.com/watch?v=UrXwobct70M&list=PLoCMsyE1cvdWKsLVyf6cPwCLDIZnOj0NS&index=4
