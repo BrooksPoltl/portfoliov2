@@ -197,3 +197,23 @@ A router can have multiple links. Forwarding table has patterns and decides whic
 cool demo of 3 way handshake at 5:24
 
 https://www.youtube.com/watch?v=UrXwobct70M&list=PLoCMsyE1cvdWKsLVyf6cPwCLDIZnOj0NS&index=4
+
+## L5
+
+### Packet switching
+
+packet: self contained unit of data that carries information necessary for it to reach its destination
+
+packet switching: independently for each arriving packet pick its outgoing link, if the link is free, send it.
+Else hold the packet for later.
+
+source routing: source specifies the path to the destination, this is bad because of security risk.
+
+routers store a small amount of state that tells the router where to send packets to.
+
+1. simple packet forwarding
+2. Efficient sharing of links
+
+Flow: a collection of datagrams belonging to the same end-to-end communication. e.g. a TCP connection.
+
+Packet switches dont need state for each flow, each packet is self-contained.
