@@ -217,3 +217,20 @@ routers store a small amount of state that tells the router where to send packet
 Flow: a collection of datagrams belonging to the same end-to-end communication. e.g. a TCP connection.
 
 Packet switches dont need state for each flow, each packet is self-contained.
+
+## L6
+
+### Layering
+
+layering is the name given to the organization of a system into multiple layers. Layers communicate with the layer above and below them.
+
+sometimes you have to break layer bounds, can cause huge issues. e.g. NATS make it hard/impossible to add new transfer protocols.
+
+### Reasons for layering
+
+- Modularity
+- well defined service
+- reuse
+- separation of concerns
+- continuous improvement
+- p2p communications
