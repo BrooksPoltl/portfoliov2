@@ -234,3 +234,15 @@ sometimes you have to break layer bounds, can cause huge issues. e.g. NATS make 
 - separation of concerns
 - continuous improvement
 - p2p communications
+
+## L7
+
+### Encapsulation
+
+Allows each service to evolve independently
+
+examples:
+
+transport: inter-application communication
+
+link: inter-host communication on a shared link
