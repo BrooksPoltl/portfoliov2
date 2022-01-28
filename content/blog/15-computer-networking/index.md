@@ -246,3 +246,11 @@ examples:
 transport: inter-application communication
 
 link: inter-host communication on a shared link
+
+VPN (virtual private network):
+
+open connection with a trusted network
+
+send IP packets to office network and office network routes them.
+
+Allows access to office resources.
