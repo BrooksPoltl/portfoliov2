@@ -254,3 +254,7 @@ open connection with a trusted network
 send IP packets to office network and office network routes them.
 
 Allows access to office resources.
+
+## L8
+
+### Memory, Byte Order, Packet Formats
